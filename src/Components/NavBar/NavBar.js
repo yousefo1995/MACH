@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Stack, Box } from "@mui/material";
+import { Stack, Box, Container } from "@mui/material";
 import MenuDrawer from "./MenuDrawer";
 
 const NavBar = () => {
@@ -18,42 +18,57 @@ const NavBar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
-        <Toolbar>
-          <Stack width="42%">
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Logo
-            </Typography>
-          </Stack>
-          <Stack
-            flexDirection="row"
-            width="58%"
-            display={{ xs: "none", lg: "flex" }}
-            justifyContent="space-between"
-          >
-            <Button color="inherit">Home</Button>
-            <Button color="inherit">About us</Button>
-            <Button color="inherit">Services</Button>
-            <Button color="inherit">Products</Button>
-            <Button color="inherit">Our work</Button>
-            <Button color="inherit">Contact us</Button>
-          </Stack>
-          <Stack
-            flexDirection="row-reverse"
-            display={{ xs: "flex", lg: "none" }}
-            width="58%"
-          >
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-              onClick={toggleDrawer}
+        <Container maxWidth="xl">
+          <Toolbar>
+            {/* <Stack flexDirection="row" width="100%" justifyContent="center">
+            <Stack
+              flexDirection="row"
+              sx={{
+                width: "100%",
+                maxWidth: { xl: "1400px" },
+                justifyContent: "center",
+              }}
+            > */}
+            {/* or use container =================================================== */}
+            <Stack width="36%">
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                Logo
+              </Typography>
+            </Stack>
+            <Stack
+              flexDirection="row"
+              width="64%"
+              display={{ xs: "none", lg: "flex" }}
+              justifyContent="flex-end"
+              gap={1}
             >
-              <MenuIcon />
-            </IconButton>
-          </Stack>
-        </Toolbar>
+              <Button color="inherit">Home</Button>
+              <Button color="inherit">About us</Button>
+              <Button color="inherit">Services</Button>
+              <Button color="inherit">Products</Button>
+              <Button color="inherit">Our work</Button>
+              <Button color="inherit">Contact us</Button>
+            </Stack>
+            <Stack
+              flexDirection="row-reverse"
+              display={{ xs: "flex", lg: "none" }}
+              width="64%"
+            >
+              <IconButton
+                size="large"
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+                // sx={{ mr: 1 }} // change it to 0 margine
+                onClick={toggleDrawer}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Stack>
+            {/* </Stack>
+          </Stack> */}
+          </Toolbar>
+        </Container>
       </AppBar>
       <MenuDrawer isOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
     </Box>
