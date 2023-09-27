@@ -7,10 +7,11 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Stack, Box, Container } from "@mui/material";
 import MenuDrawer from "./MenuDrawer";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
+  const navigate = useNavigate();
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
@@ -30,8 +31,10 @@ const NavBar = () => {
               }}
             > */}
             {/* or use container =================================================== */}
-            <Stack width="36%">
-              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            <Stack width="36%" onClick={() => navigate("/")}>
+              {/* sx={{ cursor: "pointer" }}====================================== */}
+
+              <Typography variant="h2" component="div" sx={{ flexGrow: 1 }}>
                 Logo
               </Typography>
             </Stack>
@@ -42,12 +45,24 @@ const NavBar = () => {
               justifyContent="flex-end"
               gap={1}
             >
-              <Button color="inherit">Home</Button>
-              <Button color="inherit">About us</Button>
-              <Button color="inherit">Services</Button>
-              <Button color="inherit">Products</Button>
-              <Button color="inherit">Our work</Button>
-              <Button color="inherit">Contact us</Button>
+              <Button onClick={() => navigate("/")} color="inherit">
+                Home
+              </Button>
+              <Button onClick={() => navigate("/aboutus")} color="inherit">
+                About us
+              </Button>
+              <Button onClick={() => navigate("/services")} color="inherit">
+                Services
+              </Button>
+              <Button onClick={() => navigate("/products")} color="inherit">
+                Products
+              </Button>
+              <Button onClick={() => navigate("/ourWork")} color="inherit">
+                Our work
+              </Button>
+              <Button onClick={() => navigate("/contactUs")} color="inherit">
+                Contact us
+              </Button>
             </Stack>
             <Stack
               flexDirection="row-reverse"
