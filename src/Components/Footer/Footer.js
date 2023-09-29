@@ -22,18 +22,31 @@ const Footer = () => {
       <Container maxWidth="xl">
         <Stack
           color="#fff"
-          flexDirection="row"
+          flexDirection={{ sx: "column", lg: "row" }}
           paddingTop="28px"
           paddingLeft="40px"
           paddingRight="40px"
           paddingBottom="16px"
+          alignItems={{ xs: "center", lg: "flex-start" }}
         >
-          <Stack gap={1} width="35%" paddingTop="38px">
+          <Stack
+            gap={1}
+            order={{ xs: "4 ", lg: "-1" }}
+            width="35%"
+            paddingTop="38px"
+            alignItems={{ xs: "center", lg: "flex-start" }}
+          >
             {/* <Typography variant="h1">LOGO</Typography> */}
-            <Typography variant="body2">
+            <Typography
+              variant="body2"
+              textAlign={{ xs: "center", lg: "start" }}
+            >
               © Copyright 2023 Mishal Abdulmohsin Alhokair Ltd. Co.
             </Typography>
-            <Typography variant="body2">
+            <Typography
+              variant="body2"
+              textAlign={{ xs: "center", lg: "start" }}
+            >
               Address: 11584, Riyadh, Kingdom of Saudi Arabia.
             </Typography>
             <Typography variant="body2">P.O. Box: 57750</Typography>
@@ -44,12 +57,12 @@ const Footer = () => {
               Menu
             </Typography>
             <Stack
-              flexDirection="row"
+              flexDirection={{ xs: "column", lg: "row" }}
               width="80%"
               justifyContent="space-around"
+              gap={{ xs: 1, lg: 0 }}
             >
               <Stack alignItems="center" gap={1}>
-                {/* <Typography variant="body1">Home</Typography> */}
                 <Link
                   component="button"
                   variant="body1"
@@ -66,6 +79,7 @@ const Footer = () => {
                   variant="body1"
                   color="#fff"
                   underline="hover"
+                  order={{ xs: 3, lg: 2 }}
                   onClick={() => {
                     navigate("/aboutus");
                   }}
@@ -77,6 +91,7 @@ const Footer = () => {
                   variant="body1"
                   color="#fff"
                   underline="hover"
+                  order={{ xs: 2, lg: 3 }}
                   onClick={() => {
                     navigate("/services");
                   }}
@@ -143,12 +158,20 @@ const Footer = () => {
               </IconButton>{" "}
             </Stack>
           </Stack>
-          <Stack width="30%" alignItems="flex-end" paddingTop={4}>
+          <Stack
+            width="30%"
+            order={{ xs: "-1 ", lg: "4" }}
+            alignItems={{ xs: "center", lg: "flex-end" }}
+            paddingTop={4}
+            paddingBottom={{ xs: 2, lg: 0 }}
+          >
             <Typography variant="h1" paddingBottom={1}>
               LOGO
             </Typography>
-            <Typography variant="subtitle2">شركة مشعل عبدالمحسن </Typography>
-            <Typography variant="subtitle2">الحكير المحدودة</Typography>
+            <Stack alignItems="flex-end" display={{ xs: "none", lg: "flex" }}>
+              <Typography variant="subtitle2">شركة مشعل عبدالمحسن </Typography>
+              <Typography variant="subtitle2">الحكير المحدودة</Typography>
+            </Stack>
           </Stack>
         </Stack>
       </Container>
