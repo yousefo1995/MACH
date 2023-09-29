@@ -8,7 +8,7 @@ const HeroSection = () => {
 
   return (
     <Stack position="relative">
-      <Paper>
+      <Paper elevation={0}>
         <img
           src={bgImage}
           alt=""
