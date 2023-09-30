@@ -5,21 +5,25 @@ import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
 
+import ScreenProduct from "../images/EditedProducts.png";
+import OurWork from "../images/OurWorkBg.png";
+import service from "../images/Service.jpg";
+
 const images = [
   {
-    url: "/static/images/buttons/breakfast.jpg",
+    url: service,
     title: "Services",
     width: "27%",
     path: "services",
   },
   {
-    url: "/static/images/buttons/burgers.jpg",
+    url: ScreenProduct,
     title: "Products",
     width: "27%",
     path: "products",
   },
   {
-    url: "/static/images/buttons/camera.jpg",
+    url: OurWork,
     title: "Our work",
     width: "27%",
     path: "ourWork",
@@ -28,7 +32,7 @@ const images = [
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
-  height: 160,
+  height: 200,
   [theme.breakpoints.down("sm")]: {
     width: "100% !important", // Overrides inline-style
     height: 100,
