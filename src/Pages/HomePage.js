@@ -1,7 +1,8 @@
-import { Box, Stack, Paper } from "@mui/material";
+import { Box, Stack, Paper, Container } from "@mui/material";
 import React from "react";
 import HeroSection from "../Components/HomePageComponents/HeroSection";
 import NavigationSection from "../Components/HomePageComponents/NavigationSection";
+import MissionAndVisionSec from "../Components/HomePageComponents/MissionAndVisionSec";
 
 const HomePage = () => {
   return (
@@ -19,6 +20,7 @@ const HomePage = () => {
       <Stack marginTop={7} marginBottom={7}>
         <NavigationSection />
       </Stack>
+      <MissionAndVisionSec />
     </Box>
   );
 };
