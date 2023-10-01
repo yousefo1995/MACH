@@ -13,19 +13,19 @@ const images = [
   {
     url: service,
     title: "Services",
-    width: "27%",
+    width: "30%",
     path: "services",
   },
   {
     url: ScreenProduct,
     title: "Products",
-    width: "27%",
+    width: "30%",
     path: "products",
   },
   {
     url: OurWork,
     title: "Our work",
-    width: "27%",
+    width: "30%",
     path: "ourWork",
   },
 ];
@@ -98,7 +98,7 @@ export default function NavigationSection() {
   const navigate = useNavigate();
   return (
     <Box
-      gap={2.8}
+      gap={2.5}
       justifyContent="center"
       sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
     >

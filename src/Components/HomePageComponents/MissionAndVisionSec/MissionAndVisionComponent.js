@@ -25,7 +25,11 @@ const MissionAndVisionComponent = ({
           justifyContent="space-evenly"
           color="secondary.main"
         >
-          <Stack alignSelf="flex-start" paddingRight={{ xs: 0, xl: 14 }}>
+          <Stack
+            alignSelf="flex-start"
+            paddingRight={{ xs: 0, xl: 14 }}
+            marginBottom={{ xs: 0, lg: 4 }}
+          >
             <Typography
               marginBottom={{ xs: 1, lg: 3 }}
               variant="h5"
@@ -34,7 +38,7 @@ const MissionAndVisionComponent = ({
             >
               <span style={{ borderBottom: "2px solid" }}>{enTitle}</span>
             </Typography>
-            <Typography variant="body1" width="90%">
+            <Typography variant="body1" width="93%">
               {enPharagraph}
             </Typography>
           </Stack>
@@ -42,7 +46,7 @@ const MissionAndVisionComponent = ({
             width={{ xs: "80%", lg: "46%" }}
             display={{ xs: "flex", lg: "none" }}
             alignSelf="center"
-            my={2}
+            my={4}
           >
             <img
               src={img}
