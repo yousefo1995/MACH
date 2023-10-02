@@ -1,18 +1,29 @@
-import { Box, Container, Stack, Typography } from "@mui/material";
+import { Box, Container, Divider, Stack, Typography } from "@mui/material";
 import React from "react";
+import alhakir from "../images/clientImages/client-alhakir.webp";
+import almanaHosbital from "../images/clientImages/client-almanaHospitals.png";
+import amco from "../images/clientImages/client-AMCO.png";
+import faisaliah from "../images/clientImages/client-faisaliah.jpg";
+import panda from "../images/clientImages/client-Panda.png";
+import petroMin from "../images/clientImages/client-petroMin.jpg";
+import pureGym from "../images/clientImages/client-pureGym1.png";
+import riyadhPharma from "../images/clientImages/client-RiyadhPharma.png";
+import spl from "../images/clientImages/client-SPL.jpg";
+import sporkys from "../images/clientImages/client-sporkys.png";
+import unitedMotors from "../images/clientImages/client-unitedMotors1.jpg";
 
 const clientsIcons = [
-  { name: "", url: "", width: "300px" },
-  { name: "", url: "", width: "400px" },
-  { name: "", url: "", width: "350px" },
-  { name: "", url: "", width: "320px" },
-  { name: "", url: "", width: "250px" },
-  { name: "", url: "", width: "400px" },
-  { name: "", url: "", width: "360px" },
-  { name: "", url: "", width: "370px" },
-  { name: "", url: "", width: "310px" },
-  { name: "", url: "", width: "305px" },
-  { name: "", url: "", width: "280px" },
+  { name: "Alhakir", url: alhakir },
+  { name: "Almana Hosbital", url: almanaHosbital },
+  { name: "AMCO", url: amco },
+  { name: "Faisaliah", url: faisaliah },
+  { name: "Panda", url: panda },
+  { name: "Petro Min", url: petroMin },
+  { name: "Pure Gym", url: pureGym },
+  { name: "Riyadh Pharma", url: riyadhPharma },
+  { name: "SPL", url: spl },
+  { name: "Sporky", url: sporkys },
+  { name: "United Motors", url: unitedMotors },
 ];
 
 const OurClientsSection = () => {
@@ -38,16 +49,22 @@ const OurClientsSection = () => {
         various industries. Our commitment to excellence has fostered strong,
         lasting partnerships with organizations across sectors.
       </Typography>
-      <Stack flexDirection="row" flexWrap="wrap" justifyContent="space-evenly">
+      <Stack
+        flexDirection="row"
+        flexWrap="wrap"
+        maxWidth="75%"
+        justifyContent="space-evenly"
+        mt={2}
+      >
         {clientsIcons.map((item) => (
-          <Box
-            width={item.width}
-            height="80px"
-            border="1px solid #524A4E"
-            my={0.5}
+          <Stack
+            // borderRight="1px solid black"
+            mt={1}
+            px={{ xs: 1, xl: 5 }}
+            justifyContent="center"
           >
-            {" "}
-          </Box>
+            <img src={item.url} alt={item.name} style={{ maxWidth: "100px" }} />
+          </Stack>
         ))}
       </Stack>
     </Stack>
