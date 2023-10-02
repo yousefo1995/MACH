@@ -17,6 +17,12 @@ const theme = createTheme({
     },
     secondary: {
       main: "#FF5C8D",
+      // main: "#60858D",
+      // main: "#A47C81", // good
+      // main: "#708D81",
+      // main: "#5D7E92",
+      // main: "#789C8B",
+      // main: "#6E7B8B",
     },
     action: {
       main: "#F4EEA9",
@@ -24,6 +30,9 @@ const theme = createTheme({
     // info: {
     //   main: "#5799ef",
     // },
+    iconFooter: {
+      main: "#fff",
+    },
   },
   typography: {
     fontFamily: "Roboto, Helvetica, Arial, sans-serif",

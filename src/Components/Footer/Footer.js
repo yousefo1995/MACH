@@ -36,7 +36,6 @@ const Footer = () => {
             paddingTop="38px"
             alignItems={{ xs: "center", lg: "flex-start" }}
           >
-            {/* <Typography variant="h1">LOGO</Typography> */}
             <Typography
               variant="body2"
               textAlign={{ xs: "center", lg: "start" }}
@@ -50,7 +49,19 @@ const Footer = () => {
               Address: 11584, Riyadh, Kingdom of Saudi Arabia.
             </Typography>
             <Typography variant="body2">P.O. Box: 57750</Typography>
-            <Typography variant="body2">Tel: +4444 413 11 966</Typography>
+            <Typography variant="body2" whiteSpace="nowrap">
+              Tel: +4444 413 11 966
+            </Typography>
+            <Typography variant="subtitle2" marginTop={1} whiteSpace="nowrap">
+              Images designed by{" "}
+              <Link
+                underline="none"
+                color="info.main"
+                href="http://www.freepik.com"
+              >
+                Freepik
+              </Link>
+            </Typography>
           </Stack>
           <Stack alignItems="center" width="35%">
             <Typography variant="h6" fontWeight="600" paddingBottom={2}>
