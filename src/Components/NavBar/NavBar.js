@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Stack, Box, Container } from "@mui/material";
 import MenuDrawer from "./MenuDrawer";
 import { useNavigate } from "react-router-dom";
+import logoCropped from "../images/LogoCropped.png";
 
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -17,26 +17,17 @@ const NavBar = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Container maxWidth="xl">
+    <Box sx={{ flexGrow: 1 }} marginBottom={{ xs: "48px", sm: "64px" }}>
+      <AppBar position="fixed">
+        {/* check the maxWidth  xl or xxl  ====================================================== */}
+        <Container maxWidth="xxl">
           <Toolbar>
-            {/* <Stack flexDirection="row" width="100%" justifyContent="center">
-            <Stack
-              flexDirection="row"
-              sx={{
-                width: "100%",
-                maxWidth: { xl: "1400px" },
-                justifyContent: "center",
-              }}
-            > */}
-            {/* or use container =================================================== */}
             <Stack width="36%" onClick={() => navigate("/")}>
-              {/* sx={{ cursor: "pointer" }}====================================== */}
-
-              <Typography variant="h2" component="div" sx={{ flexGrow: 1 }}>
-                Logo
-              </Typography>
+              <img
+                src={logoCropped}
+                alt="Logo"
+                style={{ cursor: "pointer", width: "120px" }}
+              />
             </Stack>
             <Stack
               flexDirection="row"
@@ -74,14 +65,11 @@ const NavBar = () => {
                 edge="start"
                 color="inherit"
                 aria-label="menu"
-                // sx={{ mr: 1 }} // change it to 0 margine
                 onClick={toggleDrawer}
               >
                 <MenuIcon />
               </IconButton>
             </Stack>
-            {/* </Stack>
-          </Stack> */}
           </Toolbar>
         </Container>
       </AppBar>
