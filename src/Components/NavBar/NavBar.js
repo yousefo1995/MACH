@@ -4,9 +4,10 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Stack, Box, Container, Typography } from "@mui/material";
+import { Stack, Box, Container } from "@mui/material";
 import MenuDrawer from "./MenuDrawer";
 import { useNavigate } from "react-router-dom";
+import logoCropped from "../images/LogoCropped.png";
 
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -22,11 +23,11 @@ const NavBar = () => {
         <Container maxWidth="xxl">
           <Toolbar>
             <Stack width="36%" onClick={() => navigate("/")}>
-              {/* sx={{ cursor: "pointer" }}====================================== */}
-
-              <Typography variant="h2" component="div" sx={{ flexGrow: 1 }}>
-                Logo
-              </Typography>
+              <img
+                src={logoCropped}
+                alt="Logo"
+                style={{ cursor: "pointer", width: "120px" }}
+              />
             </Stack>
             <Stack
               flexDirection="row"
