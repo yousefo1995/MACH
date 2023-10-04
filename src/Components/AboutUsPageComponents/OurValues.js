@@ -1,5 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
+import ValueCircle from "./ValueCircle";
 
 const values = [
   { deg: 270, enTitle: "Value Centricity", arTitle: "اﻻﻟﺘﺰام" },
@@ -8,9 +9,6 @@ const values = [
   { deg: 126, enTitle: "Trust", arTitle: "اﻟﺜﻘﺔ" },
   { deg: 198, enTitle: "Loyalty", arTitle: "اﻟﻮﻻء" },
 ];
-
-const radius = 196;
-const mobileRadius = 122;
 
 const OurValues = () => {
   return (
@@ -27,65 +25,12 @@ const OurValues = () => {
         position="relative"
       >
         {values.map((item, index) => (
-          <Stack
+          <ValueCircle
             key={index}
-            alignItems="center"
-            justifyContent="center"
-            width={{ xs: "88px", sm: "135px" }}
-            height={{ xs: "88px", sm: "135px" }}
-            bgcolor="primary.main"
-            border="2px solid #327C14"
-            borderRadius="50%"
-            position="absolute"
-            padding={1}
-            sx={{
-              transform: {
-                xs: `translate(${
-                  mobileRadius * Math.cos((item.deg * Math.PI) / 180)
-                }px, ${mobileRadius * Math.sin((item.deg * Math.PI) / 180)}px)`,
-                sm: `translate(${
-                  radius * Math.cos((item.deg * Math.PI) / 180)
-                }px, ${radius * Math.sin((item.deg * Math.PI) / 180)}px)`,
-              },
-            }}
-          >
-            <Stack display={{ xs: "none", sm: "block" }}>
-              <Typography
-                variant="h6"
-                align="center"
-                fontWeight="700"
-                color="#fff"
-              >
-                {item.enTitle}
-              </Typography>
-              <Typography
-                variant="h6"
-                align="center"
-                fontWeight="700"
-                color="#fff"
-              >
-                {item.arTitle}
-              </Typography>
-            </Stack>
-            <Stack display={{ xs: "block", sm: "none" }}>
-              <Typography
-                variant="body2"
-                align="center"
-                fontWeight="700"
-                color="#fff"
-              >
-                {item.enTitle}
-              </Typography>
-              <Typography
-                variant="body2"
-                align="center"
-                fontWeight="700"
-                color="#fff"
-              >
-                {item.arTitle}
-              </Typography>
-            </Stack>
-          </Stack>
+            enTitle={item.enTitle}
+            arTitle={item.arTitle}
+            deg={item.deg}
+          />
         ))}
         <Stack
           width={{ xs: "72px", sm: "150px" }}
