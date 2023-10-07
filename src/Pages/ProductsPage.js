@@ -56,8 +56,8 @@ const ProductsPage = () => {
       }}
     >
       <Container maxWidth="lg">
-        <Stack alignItems="center" my={6}>
-          <Typography variant="h3" fontWeight="700" color="primary.main">
+        <Stack alignItems="center" mt={4} mb={12}>
+          <Typography variant="h1" fontWeight="700" color="primary">
             <span style={{ borderBottom: "8px solid", borderRadius: "8px" }}>
               {" "}
               Our Products
@@ -65,6 +65,7 @@ const ProductsPage = () => {
           </Typography>
           <Stack
             py={10}
+            pt={12}
             flexDirection="row"
             justifyContent="center"
             flexWrap="wrap"
