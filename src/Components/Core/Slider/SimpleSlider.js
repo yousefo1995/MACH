@@ -14,7 +14,7 @@ const SimpleSlider = ({
   slidesToShow = 6,
 
   buttonHeight = "50px",
-  ButtonsDisplay = { xs: "none", sm: "block" },
+  ButtonsDisplay = { xs: "block", sm: "block" },
   currentSlide,
 }) => {
   const settings = {

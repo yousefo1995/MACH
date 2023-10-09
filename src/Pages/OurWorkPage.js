@@ -1,29 +1,38 @@
 import { Container, Stack, Typography, Box, Paper } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import basicImage from "../Components/images/OurWorkBg.png";
+import image2 from "../Components/images/Service.jpg";
+import image3 from "../Components/images/contachUsCover (1).jpg";
+import image4 from "../Components/images/service4.jpg";
+import image5 from "../Components/images/vision2.jpg";
+
 import SimpleSlider from "../Components/Core/Slider/SimpleSlider";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
+import image6 from "../Components/images/products/DigitalSignage1.jpg";
 
 const images = [
   { url: basicImage, title: "ourWork" },
+  { url: image2, title: "ourWork" },
+  { url: image3, title: "ourWork" },
+  { url: image4, title: "ourWork" },
+  { url: image5, title: "ourWork" },
+  { url: image6, title: "ourWork" },
+  { url: image2, title: "ourWork" },
   { url: basicImage, title: "ourWork" },
+  { url: image3, title: "ourWork" },
+  { url: image4, title: "ourWork" },
   { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
-  { url: basicImage, title: "ourWork" },
+  { url: image3, title: "ourWork" },
 ];
 
-const ImageCard = ({ img, title }) => {
+const ImageCard = ({ img, title, onClick }) => {
   return (
     <Stack p={1}>
-      <Card sx={{ maxWidth: { xs: "100%", md: "345" } }}>
+      <Card
+        sx={{ maxWidth: { xs: "100%", md: "345" }, cursor: "pointer" }}
+        onClick={onClick}
+      >
         <CardMedia
           sx={{ height: { xs: 320, sm: 140 } }}
           image={img}
@@ -39,27 +48,58 @@ const OurWorkPage = () => {
   // add slider
   // add label to slider
   // or make it all shown as mobile screenshot whatsapp
+
+  const [bigImage, setBigImage] = useState({
+    url: basicImage,
+    title: "basicImage",
+  });
+
+  const selectImageHandler = (url, title) => {
+    setBigImage({ url: url, title: title });
+  };
+
   return (
-    <Stack
-      alignItems="center"
-      sx={
-        {
-          // background: `url(${bgImage})`,
-          // backgroundSize: "cover",
-        }
-      }
-    >
+    <Stack alignItems="center">
       <Container maxWidth="xl">
         <Stack maxWidth="100%" alignItems="center" my={4}>
-          <Typography variant="h1" fontWeight="700" color="primary" mb={12}>
+          <Typography variant="h1" fontWeight="700" color="primary">
             <span style={{ borderBottom: "8px solid", borderRadius: "8px" }}>
               {" "}
               Our Work
             </span>
           </Typography>
 
-          <Stack mb={4} alignItems="center">
-            <img src={basicImage} alt="" width="90%" />
+          <Typography
+            color="primary.main"
+            textAlign="center"
+            mt={4}
+            mb={10}
+            width="60%"
+          >
+            At MAHC, we've been active! Take a look at some of our recent
+            projects and see how we're making a difference in various
+            industries.
+          </Typography>
+
+          <Stack mb={4} width="90%">
+            <Card
+              sx={{
+                bgcolor: "#F1F1F1",
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <CardMedia
+                component="img"
+                sx={{
+                  height: { xs: 320, sm: 564 },
+                  width: "auto",
+                  objectFit: "cover",
+                }}
+                image={bigImage.url}
+                title={bigImage.title}
+              />
+            </Card>
           </Stack>
 
           <Box
@@ -70,7 +110,14 @@ const OurWorkPage = () => {
           >
             <SimpleSlider buttonHeight="50%">
               {images.map((item) => {
-                return <ImageCard img={item.url} title={item.title} />;
+                return (
+                  <ImageCard
+                    img={item.url}
+                    title={item.title}
+                    key={item.title}
+                    onClick={() => selectImageHandler(item.url, item.title)}
+                  />
+                );
               })}
             </SimpleSlider>
           </Box>

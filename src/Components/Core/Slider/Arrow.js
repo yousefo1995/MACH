@@ -7,6 +7,7 @@ export const StyledIconButton = styled(IconButton)(
     borderRadius: "12px",
     width: "40px",
     height: "60px",
+    border: "1px solid #ffffffb3",
 
     backgroundColor: bg,
     "&:hover": {
@@ -44,8 +45,8 @@ export function Arrow({
           sx={{
             position: "absolute",
             bottom: "30%",
-            left: isLeft && "-40px",
-            right: !isLeft && "-42px",
+            left: { xs: isLeft && "8px", sm: isLeft && "-40px" },
+            right: { xs: !isLeft && "8px", sm: !isLeft && "-42px" },
             zIndex: 1,
           }}
         >
