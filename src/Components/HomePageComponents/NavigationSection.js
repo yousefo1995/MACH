@@ -116,7 +116,7 @@ export default function NavigationSection() {
           <Image>
             <Typography
               component="span"
-              variant="h6"
+              variant="h2"
               color="inherit"
               sx={{
                 position: "relative",
