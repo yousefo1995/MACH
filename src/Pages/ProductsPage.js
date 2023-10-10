@@ -1,4 +1,4 @@
-import { Box, Container, Paper, Stack, Typography } from "@mui/material";
+import { Container, Paper, Stack, Typography } from "@mui/material";
 import React from "react";
 import bgImage from "../Components/images/bgImage.jpg";
 import digitalSignage from "../Components/images/products/DigitalSignage1.jpg";
@@ -62,6 +62,16 @@ const ProductsPage = () => {
               {" "}
               Our Products
             </span>
+          </Typography>
+          <Typography
+            color="primary.main"
+            textAlign="center"
+            mt={4}
+            width="60%"
+          >
+            Discover our range of products, from screens to printers and tools.
+            We offer solutions that work for you, ensuring efficiency and
+            quality in your operations.
           </Typography>
           <Stack
             py={10}
