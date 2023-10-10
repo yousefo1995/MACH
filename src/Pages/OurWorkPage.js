@@ -1,15 +1,16 @@
-import { Container, Stack, Typography, Box, Paper } from "@mui/material";
+import { Container, Stack, Typography, Box, Paper, Grid } from "@mui/material";
 import React, { useState } from "react";
 import basicImage from "../Components/images/OurWorkBg.png";
 import image2 from "../Components/images/Service.jpg";
 import image3 from "../Components/images/contachUsCover (1).jpg";
 import image4 from "../Components/images/service4.jpg";
 import image5 from "../Components/images/vision2.jpg";
+import image6 from "../Components/images/products/DigitalSignage1.jpg";
 
+import GridImage from "../Components/OurWorkPageComponents/GridImage";
 import SimpleSlider from "../Components/Core/Slider/SimpleSlider";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
-import image6 from "../Components/images/products/DigitalSignage1.jpg";
 
 const images = [
   { url: basicImage, title: "ourWork" },
@@ -34,8 +35,10 @@ const ImageCard = ({ img, title, onClick }) => {
         onClick={onClick}
       >
         <CardMedia
+          component="img"
           sx={{ height: { xs: 320, sm: 140 } }}
           image={img}
+          loading="lazy"
           title={title}
         />
       </Card>
@@ -44,11 +47,6 @@ const ImageCard = ({ img, title, onClick }) => {
 };
 
 const OurWorkPage = () => {
-  // add modal on big image click
-  // add slider
-  // add label to slider
-  // or make it all shown as mobile screenshot whatsapp
-
   const [bigImage, setBigImage] = useState({
     url: basicImage,
     title: "basicImage",
@@ -68,7 +66,6 @@ const OurWorkPage = () => {
               Our Work
             </span>
           </Typography>
-
           <Typography
             color="primary.main"
             textAlign="center"
@@ -81,8 +78,29 @@ const OurWorkPage = () => {
             industries.
           </Typography>
 
-          <Stack mb={4} width="90%">
+          <GridImage
+            img1={basicImage}
+            img2={image3}
+            arTitle="الشاشات الداخلية"
+            enTitle="Interior LED Screens"
+          />
+          <GridImage
+            img1={basicImage}
+            img2={image3}
+            isLeft={true}
+            arTitle="الشاشات الداخلية"
+            enTitle="Interior LED Screens"
+          />
+          <GridImage
+            img1={basicImage}
+            img2={image3}
+            arTitle="الشاشات الداخلية"
+            enTitle="Interior LED Screens"
+          />
+
+          <Stack mb={4} width="90%" display={{ xs: "none", sm: "flex" }}>
             <Card
+              elevation={10}
               sx={{
                 bgcolor: "#F1F1F1",
                 display: "flex",
@@ -92,11 +110,12 @@ const OurWorkPage = () => {
               <CardMedia
                 component="img"
                 sx={{
-                  height: { xs: 320, sm: 564 },
+                  height: { xs: 320, sm: 380, ml: 564 },
                   width: "auto",
                   objectFit: "cover",
                 }}
                 image={bigImage.url}
+                loading="lazy"
                 title={bigImage.title}
               />
             </Card>

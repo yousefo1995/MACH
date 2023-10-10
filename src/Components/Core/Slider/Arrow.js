@@ -35,36 +35,30 @@ export function Arrow({
   slidesToShow,
 }) {
   return (
-    <>
-      {(isLeft
-        ? currentSlide !== 0
-        : currentSlide !== slideCount - slidesToShow) && (
-        <Stack
-          onClick={onClick}
-          display={ButtonsDisplay}
-          sx={{
-            position: "absolute",
-            bottom: "30%",
-            left: { xs: isLeft && "8px", sm: isLeft && "-40px" },
-            right: { xs: !isLeft && "8px", sm: !isLeft && "-42px" },
-            zIndex: 1,
-          }}
-        >
-          <StyledIconButton
-            borderR="4px"
-            showBorder={true}
-            width="48px"
-            height="64px"
-            bg="rgb(18, 18, 18, 0.45)"
-            hoverBg="rgb(18, 18, 18, 0.45)"
-            iconColor="#fff"
-            iconHover="#f5c518"
-            iconSize="30px"
-          >
-            {children}
-          </StyledIconButton>
-        </Stack>
-      )}
-    </>
+    <Stack
+      onClick={onClick}
+      display={ButtonsDisplay}
+      sx={{
+        position: "absolute",
+        bottom: "30%",
+        left: { xs: isLeft && "8px", sm: isLeft && "-40px" },
+        right: { xs: !isLeft && "8px", sm: !isLeft && "-42px" },
+        zIndex: 1,
+      }}
+    >
+      <StyledIconButton
+        borderR="4px"
+        showBorder={true}
+        width="48px"
+        height="64px"
+        bg="rgb(18, 18, 18, 0.45)"
+        hoverBg="rgb(18, 18, 18, 0.45)"
+        iconColor="#fff"
+        iconHover="#f5c518"
+        iconSize="30px"
+      >
+        {children}
+      </StyledIconButton>
+    </Stack>
   );
 }
