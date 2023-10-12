@@ -7,8 +7,10 @@ import OurClientsSection from "../Components/HomePageComponents/OurClientsSectio
 
 const HomePage = () => {
   return (
-    <Box position="relative">
-      <HeroSection />
+    <Box position="relative" alignItems="center">
+      <Stack alignItems="center">
+        <HeroSection />
+      </Stack>
       {/* Floating NavigationSection */}
       {/* <Stack width="100%" alignItems="center" marginTop={-6} marginBottom={4}>
         <Paper
