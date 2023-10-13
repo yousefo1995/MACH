@@ -44,12 +44,12 @@ const OurValues = () => {
         >
           <Stack display={{ xs: "none", sm: "block" }}>
             <Typography
-              variant="h3"
+              variant="h4"
               fontWeight="700"
               color="primary.main"
               align="center"
             >
-              Our Values
+              OUR VALUES
             </Typography>
           </Stack>
           <Stack display={{ xs: "block", sm: "none" }}>
