@@ -73,6 +73,7 @@ const MissionAndVisionComponent = ({
               fontWeight="700"
               fontStyle="italic"
               textAlign="right"
+              fontFamily="Rubik, sans-serif"
             >
               <span style={{ borderBottom: "2px solid" }}>{arTitle}</span>
             </Typography>
@@ -80,7 +81,6 @@ const MissionAndVisionComponent = ({
               variant="body1"
               width="100%"
               dir="rtl"
-              // textAlign="right"
               fontFamily="Rubik, sans-serif"
             >
               {arParagraph}
