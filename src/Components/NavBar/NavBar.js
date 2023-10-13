@@ -20,7 +20,7 @@ const NavBar = () => {
     <Box sx={{ flexGrow: 1 }} marginBottom={{ xs: "48px", sm: "64px" }}>
       <AppBar position="fixed">
         {/* check the maxWidth  xl or xxl  ====================================================== */}
-        <Container maxWidth="xl">
+        <Container maxWidth="xxl">
           <Toolbar>
             <Stack width="36%" onClick={() => navigate("/")}>
               <img

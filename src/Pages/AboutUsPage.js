@@ -24,7 +24,7 @@ const AboutUsPage = () => {
   return (
     <Stack>
       <Container
-        maxWidth="xl"
+        maxWidth="xxl"
         sx={{
           background:
             "linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(238,238,238,1) 53%, rgba(251,251,251,0.8907578412224265) 90%)",
