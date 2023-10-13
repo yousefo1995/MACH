@@ -36,7 +36,7 @@ const HeroSection = () => {
           <CardMedia
             component="img"
             src={heroSectionDate.img}
-            alt=""
+            title="Cover image"
             width="100%"
             sx={heroCardMediaStyles}
           />

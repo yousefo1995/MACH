@@ -52,6 +52,7 @@ const MissionAndVisionComponent = ({
             <img
               src={img}
               alt="mission and vision img"
+              loading="lazy"
               style={{
                 maxHeight: "378px",
                 objectFit: "cover",

@@ -71,7 +71,12 @@ const OurClientsSection = () => {
             px={{ xs: 1, xl: 5 }}
             justifyContent="center"
           >
-            <img src={item.url} alt={item.name} style={{ maxWidth: "100px" }} />
+            <img
+              src={item.url}
+              alt={item.name}
+              loading="lazy"
+              style={{ maxWidth: "100px" }}
+            />
           </Stack>
         ))}
       </Stack>
