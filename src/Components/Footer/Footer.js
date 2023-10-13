@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <Box bgcolor="primary.main">
-      <Container maxWidth="xl">
+      <Container maxWidth="xxl">
         <Stack
           color="#fff"
           flexDirection={{ sx: "column", lg: "row" }}
