@@ -10,6 +10,22 @@ import {
 } from "@mui/material";
 import bgImage from "../images/HeroCover.jpg";
 
+const heroSectionDate = {
+  img: bgImage,
+  title: "Your Vision, Our Technology, Realizing Your Success.",
+};
+
+//styles
+const heroCardMediaStyles = {
+  maxHeight: { xs: "320px", md: "520px" },
+  objectFit: "cover",
+};
+const heroTextContainerStyles = {
+  display: "flex",
+  justifyContent: "center",
+  backdropFilter: { xs: "blur(1px)", md: "none" },
+};
+
 const HeroSection = () => {
   const navigate = useNavigate();
 
@@ -19,13 +35,10 @@ const HeroSection = () => {
         <Paper elevation={0}>
           <CardMedia
             component="img"
-            src={bgImage}
+            src={heroSectionDate.img}
             alt=""
             width="100%"
-            sx={{
-              maxHeight: { xs: "320px", md: "520px" },
-              objectFit: "cover",
-            }}
+            sx={heroCardMediaStyles}
           />
           <Stack
             position="absolute"
@@ -33,14 +46,7 @@ const HeroSection = () => {
             top={{ xs: "20%", sm: "26%", xl: "18%" }}
             alignItems="center"
           >
-            <Container
-              maxWidth="xxl"
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                backdropFilter: { xs: "blur(1px)", md: "none" },
-              }}
-            >
+            <Container maxWidth="xxl" sx={heroTextContainerStyles}>
               <Stack
                 gap={1}
                 width="92%"
@@ -71,7 +77,7 @@ const HeroSection = () => {
                     fontFamily="sans-serif"
                     textAlign={{ xs: "center", md: "start" }}
                   >
-                    Your Vision, Our Technology, Realizing Your Success.
+                    {heroSectionDate.title}
                   </Typography>
                 </Stack>
 
