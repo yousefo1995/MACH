@@ -94,14 +94,17 @@ const ImageMarked = styled("span")(({ theme }) => ({
   transition: theme.transitions.create("opacity"),
 }));
 
+const navigationBoxStyles = {
+  display: "flex",
+  flexWrap: "wrap",
+  minWidth: 300,
+  width: "100%",
+};
+
 export default function NavigationSection() {
   const navigate = useNavigate();
   return (
-    <Box
-      gap={2.5}
-      justifyContent="center"
-      sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
-    >
+    <Box gap={2.5} justifyContent="center" sx={navigationBoxStyles}>
       {images.map((image) => (
         <ImageButton
           focusRipple
@@ -116,7 +119,7 @@ export default function NavigationSection() {
           <Image>
             <Typography
               component="span"
-              variant="h6"
+              variant="h2"
               color="inherit"
               sx={{
                 position: "relative",

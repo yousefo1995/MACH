@@ -1,7 +1,7 @@
-import { Box, Container, Divider, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import React from "react";
 import alhakir from "../images/clientImages/client-alhakir.webp";
-import almanaHosbital from "../images/clientImages/client-almanaHospitals.png";
+import almanaHospital from "../images/clientImages/client-almanaHospitals.png";
 import amco from "../images/clientImages/client-AMCO.png";
 import faisaliah from "../images/clientImages/client-faisaliah.jpg";
 import panda from "../images/clientImages/client-Panda.png";
@@ -11,10 +11,14 @@ import riyadhPharma from "../images/clientImages/client-RiyadhPharma.png";
 import spl from "../images/clientImages/client-SPL.jpg";
 import sporkys from "../images/clientImages/client-sporkys.png";
 import unitedMotors from "../images/clientImages/client-unitedMotors1.jpg";
+import alMamlakaHospital from "../images/clientImages/client-Al-mamlakHospital.jpeg";
+import padelIn from "../images/clientImages/client-padel-In.png";
+import tamimiMarkets from "../images/clientImages/client-tamimiMarkets.png";
+import ministryOfEnergy from "../images/clientImages/client-ministryOfEnergy.jpg";
 
 const clientsIcons = [
   { name: "Alhakir", url: alhakir },
-  { name: "Almana Hosbital", url: almanaHosbital },
+  { name: "Almana Hospital", url: almanaHospital },
   { name: "AMCO", url: amco },
   { name: "Faisaliah", url: faisaliah },
   { name: "Panda", url: panda },
@@ -24,6 +28,10 @@ const clientsIcons = [
   { name: "SPL", url: spl },
   { name: "Sporky", url: sporkys },
   { name: "United Motors", url: unitedMotors },
+  { name: "Al-Mamlaka Hospital", url: alMamlakaHospital },
+  { name: "Padel-In", url: padelIn },
+  { name: "Tamimi Markets", url: tamimiMarkets },
+  { name: "Ministry Of Energy", url: ministryOfEnergy },
 ];
 
 const OurClientsSection = () => {
@@ -33,8 +41,8 @@ const OurClientsSection = () => {
         variant="h1"
         fontSize="36px"
         fontWeight="700"
-        mb={2}
-        color="primary"
+        mb={3}
+        color="primary.main"
       >
         <span style={{ borderBottom: "4px solid" }}>Our Clients</span>
       </Typography>
@@ -52,18 +60,23 @@ const OurClientsSection = () => {
       <Stack
         flexDirection="row"
         flexWrap="wrap"
-        maxWidth="75%"
+        maxWidth="77%"
         justifyContent="space-evenly"
         mt={2}
       >
-        {clientsIcons.map((item) => (
+        {clientsIcons.map((item, index) => (
           <Stack
-            // borderRight="1px solid black"
+            key={index}
             mt={1}
             px={{ xs: 1, xl: 5 }}
             justifyContent="center"
           >
-            <img src={item.url} alt={item.name} style={{ maxWidth: "100px" }} />
+            <img
+              src={item.url}
+              alt={item.name}
+              loading="lazy"
+              style={{ maxWidth: "100px" }}
+            />
           </Stack>
         ))}
       </Stack>

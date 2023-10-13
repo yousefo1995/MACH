@@ -6,8 +6,8 @@ const MissionAndVisionComponent = ({
   isImageToLeft,
   enTitle,
   arTitle,
-  enPharagraph,
-  arPharagraph,
+  enParagraph,
+  arParagraph,
 }) => {
   return (
     <Container maxWidth="xxl" sx={{ paddingBottom: "48px" }}>
@@ -21,8 +21,9 @@ const MissionAndVisionComponent = ({
         <Stack
           width={{ xs: "80%", lg: "46%" }}
           paddingLeft={!isImageToLeft ? 1.5 : 4}
-          paddingTop={{ xs: 2, lg: 5 }}
-          justifyContent="space-evenly"
+          paddingTop={{ xs: 2, lg: 0, xl: 5 }}
+          minHeight={!isImageToLeft ? "330px" : "250px"}
+          justifyContent={!isImageToLeft ? "space-evenly" : "space-between"}
           color="secondary.main"
         >
           <Stack
@@ -39,7 +40,7 @@ const MissionAndVisionComponent = ({
               <span style={{ borderBottom: "2px solid" }}>{enTitle}</span>
             </Typography>
             <Typography variant="body1" width="93%">
-              {enPharagraph}
+              {enParagraph}
             </Typography>
           </Stack>
           <Stack
@@ -50,7 +51,8 @@ const MissionAndVisionComponent = ({
           >
             <img
               src={img}
-              alt="mission and vission img"
+              alt="mission and vision img"
+              loading="lazy"
               style={{
                 maxHeight: "378px",
                 objectFit: "cover",
@@ -74,8 +76,14 @@ const MissionAndVisionComponent = ({
             >
               <span style={{ borderBottom: "2px solid" }}>{arTitle}</span>
             </Typography>
-            <Typography variant="body1" width="100%" textAlign="right">
-              {arPharagraph}
+            <Typography
+              variant="body1"
+              width="100%"
+              dir="rtl"
+              // textAlign="right"
+              fontFamily="Rubik, sans-serif"
+            >
+              {arParagraph}
             </Typography>
           </Stack>
         </Stack>
@@ -86,7 +94,7 @@ const MissionAndVisionComponent = ({
         >
           <img
             src={img}
-            alt="mission and vission img"
+            alt="mission and vision img"
             style={{
               maxHeight: "378px",
               objectFit: "cover",
