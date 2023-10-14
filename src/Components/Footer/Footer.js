@@ -49,7 +49,9 @@ const Footer = () => {
             >
               Address: 11584, Riyadh, Kingdom of Saudi Arabia.
             </Typography>
-            <Typography variant="body2">P.O. Box: 57750</Typography>
+            <Typography variant="body2" whiteSpace="nowrap">
+              P.O. Box: 57750
+            </Typography>
             <Typography variant="body2" whiteSpace="nowrap">
               Tel: +4444 413 11 966
             </Typography>
