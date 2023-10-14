@@ -1,9 +1,12 @@
 import { Container, Stack } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import contactUsCover from "../Components/images/contachUsCover (1).jpg";
 import ContactUsForm from "../Components/ContactUsPageComponents/ContactUsForm";
 
 const ContactUsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 50);
+  }, []);
   return (
     <Stack
       sx={{
