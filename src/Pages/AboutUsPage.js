@@ -62,7 +62,17 @@ const AboutUsPage = () => {
                 {textData.enParagraph2}
               </Typography>
             </Stack>
-            <Stack width={{ xs: "80%", lg: "100%" }}>
+            <Stack
+              width={{ xs: "100%", lg: "30%" }}
+              alignItems={{ xs: "center", lg: "flex-end" }}
+              mt={10}
+              mr={0}
+              mb={{ xs: 6, lg: 0 }}
+              display={{ xs: "block", lg: "none" }}
+            >
+              <OurValues />
+            </Stack>
+            <Stack width={{ xs: "80%", lg: "100%" }} mb={{ xs: 6, lg: 0 }}>
               <Stack
                 flexDirection="row"
                 mt={4}
@@ -97,6 +107,7 @@ const AboutUsPage = () => {
             mt={4}
             mr={5}
             mb={{ xs: 8, lg: 0 }}
+            display={{ xs: "none", lg: "flex" }}
           >
             <OurValues />
           </Stack>
