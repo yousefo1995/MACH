@@ -1,11 +1,13 @@
-import { Container, Paper, Stack, Typography } from "@mui/material";
-import React from "react";
+import { Container, Stack, Typography } from "@mui/material";
+import React, { useEffect } from "react";
 import bgImage from "../Components/images/bgImage.jpg";
 import digitalSignage from "../Components/images/products/DigitalSignage1.jpg";
+import digitalShelf from "../Components/images/products/Digital-Shelf-AI.jpg";
 import inkCatridges from "../Components/images/products/Ink cartridges1.jpg";
-import ledVideoScreen from "../Components/images/products/LEDVideoScreen.jpeg";
-import transparentScreen from "../Components/images/products/TransparentScreen.png";
+import ledVideoScreen from "../Components/images/products/LED-Screen-AI2.jpg";
+import transparentScreen from "../Components/images/products/transparent-screen-AI.jpg";
 import smartTable from "../Components/images/products/smartTable.jpg";
+import ProductCard from "../Components/ProductsPageComponents/ProductCard";
 
 const productsData = [
   {
@@ -15,10 +17,10 @@ const productsData = [
     url: digitalSignage,
   },
   {
-    name: "",
+    name: "DigitalShelf",
     enName: "Digital Shelf",
     arName: "الرفوف الرقمية",
-    url: digitalSignage,
+    url: digitalShelf,
   },
   {
     name: "transparentScreen",
@@ -47,6 +49,10 @@ const productsData = [
 ];
 
 const ProductsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Stack
       alignItems="center"
@@ -74,34 +80,22 @@ const ProductsPage = () => {
             quality in your operations.
           </Typography>
           <Stack
-            py={10}
-            pt={12}
+            pb={10}
+            pt={8}
             flexDirection="row"
             justifyContent="center"
             flexWrap="wrap"
-            gap={3}
+            gap={{ xs: 3, xl: 5, xxl: 8 }}
+            alignContent="center"
           >
-            {productsData.map((item) => (
-              <Paper
-                elevation={2}
-                sx={{ maxWidth: "280px", bgcolor: "primary.light" }}
-              >
-                <Stack alignItems="center" pb={2} color="#fff">
-                  <img
-                    src={item.url}
-                    alt=""
-                    width="100%"
-                    height="280px"
-                    style={{ objectFit: "cover" }}
-                  />
-                  <Typography my={2} variant="h2">
-                    {item.enName}
-                  </Typography>
-                  <Typography variant="h2" dir="rtl">
-                    {item.arName}
-                  </Typography>
-                </Stack>
-              </Paper>
+            {productsData.map((item, index) => (
+              <ProductCard
+                key={index}
+                name={item.name}
+                enName={item.enName}
+                arName={item.arName}
+                img={item.url}
+              />
             ))}
           </Stack>
         </Stack>
