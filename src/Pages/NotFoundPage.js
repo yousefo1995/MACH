@@ -11,7 +11,7 @@ const NotFoundPage = () => {
       marginTop={16}
       marginBottom={10}
     >
-      <Stack width="70%">
+      <Stack width={{ xs: "100%", sm: "70%" }}>
         <Box
           marginTop={2}
           padding={8}
