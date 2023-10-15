@@ -16,8 +16,13 @@ import MiscellaneousServicesIcon from "@mui/icons-material/MiscellaneousServices
 import InventoryIcon from "@mui/icons-material/Inventory";
 import whiteLogo from "../../White logo - no background.svg";
 
-const MenuDrawer = ({ isOpen, toggleDrawer }) => {
+const MenuDrawer = ({ isOpen, toggleDrawer, setIsDrawerOpen }) => {
   const navigate = useNavigate();
+
+  const onClickHandler = (route) => {
+    navigate(route);
+    setIsDrawerOpen(false);
+  };
   return (
     <Drawer anchor="left" open={isOpen} onClose={toggleDrawer}>
       <List
@@ -32,14 +37,14 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
         }}
       >
         <Stack>
-          <ListItem button onClick={() => navigate("/")}>
+          <ListItem button onClick={() => onClickHandler("/")}>
             <HomeIcon />
             <Typography padding={1} color="inherit">
               Home
             </Typography>
           </ListItem>
           <Divider sx={{ bgcolor: "#424242" }} />
-          <ListItem button onClick={() => navigate("/aboutus")}>
+          <ListItem button onClick={() => onClickHandler("/aboutus")}>
             <InfoIcon />
             <Typography padding={1} color="inherit">
               About us
@@ -47,7 +52,7 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
           </ListItem>
           <Divider sx={{ bgcolor: "#424242" }} />
 
-          <ListItem button onClick={() => navigate("/services")}>
+          <ListItem button onClick={() => onClickHandler("/services")}>
             <MiscellaneousServicesIcon />
             <Typography padding={1} color="inherit">
               Services
@@ -55,7 +60,7 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
           </ListItem>
           <Divider sx={{ bgcolor: "#424242" }} />
 
-          <ListItem button onClick={() => navigate("/products")}>
+          <ListItem button onClick={() => onClickHandler("/products")}>
             <InventoryIcon />
             <Typography padding={1} color="inherit">
               Products
@@ -63,7 +68,7 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
           </ListItem>
           <Divider sx={{ bgcolor: "#424242 " }} />
 
-          <ListItem button onClick={() => navigate("/ourWork")}>
+          <ListItem button onClick={() => onClickHandler("/ourWork")}>
             <WorkIcon />
             <Typography padding={1} color="inherit">
               Our work
@@ -71,7 +76,7 @@ const MenuDrawer = ({ isOpen, toggleDrawer }) => {
           </ListItem>
           <Divider sx={{ bgcolor: "#424242" }} />
 
-          <ListItem button onClick={() => navigate("/contactUs")}>
+          <ListItem button onClick={() => onClickHandler("/contactUs")}>
             <EmailIcon />
             <Typography padding={1} color="inherit">
               Contact us

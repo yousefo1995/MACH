@@ -12,10 +12,10 @@ const ProductCard = ({ name, img, enName, arName }) => {
           height="280px"
           style={{ objectFit: "cover" }}
         />
-        <Typography my={2} variant="h2">
+        <Typography my={2} variant="h2" textAlign="center">
           {enName}
         </Typography>
-        <Typography variant="h2" dir="rtl">
+        <Typography variant="h2" textAlign="center">
           {arName}
         </Typography>
       </Stack>
