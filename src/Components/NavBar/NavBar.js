@@ -73,7 +73,11 @@ const NavBar = () => {
           </Toolbar>
         </Container>
       </AppBar>
-      <MenuDrawer isOpen={isDrawerOpen} toggleDrawer={toggleDrawer} />
+      <MenuDrawer
+        isOpen={isDrawerOpen}
+        toggleDrawer={toggleDrawer}
+        setIsDrawerOpen={setIsDrawerOpen}
+      />
     </Box>
   );
 };

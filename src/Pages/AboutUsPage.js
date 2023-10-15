@@ -37,7 +37,7 @@ const AboutUsPage = () => {
           <Stack
             color="primary.main"
             width={{ xs: "100%", lg: "45%" }}
-            mx={2}
+            mx={{ xs: 0, lg: 2 }}
             justifyContent="space-evenly"
             alignItems={{ xs: "center", lg: "initial" }}
           >
@@ -66,7 +66,7 @@ const AboutUsPage = () => {
               width={{ xs: "100%", lg: "30%" }}
               alignItems={{ xs: "center", lg: "flex-end" }}
               mt={10}
-              mr={0}
+              mr={1} // try on mobile
               mb={{ xs: 6, lg: 0 }}
               display={{ xs: "block", lg: "none" }}
             >
