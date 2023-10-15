@@ -1,50 +1,44 @@
 import { Container, Stack, Typography } from "@mui/material";
 import React, { useEffect } from "react";
-import bgImage from "../Components/images/bgImage.jpg";
-import digitalSignage from "../Components/images/products/DigitalSignage1.jpg";
-import digitalShelf from "../Components/images/products/Digital-Shelf-AI.jpg";
-import inkCatridges from "../Components/images/products/Ink cartridges1.jpg";
-import ledVideoScreen from "../Components/images/products/LED-Screen-AI2.jpg";
-import transparentScreen from "../Components/images/products/transparent-screen-AI.jpg";
-import smartTable from "../Components/images/products/smartTable.jpg";
 import ProductCard from "../Components/ProductsPageComponents/ProductCard";
+import bgImage from "../Components/images/bgImage.jpg";
 
 const productsData = [
   {
     name: "digitalSignage",
     enName: "Digital Signage",
     arName: "اللوحات الرقمية",
-    url: digitalSignage,
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FDigitalSignage1.jpg?alt=media&token=62898348-cdf2-4af3-b80a-669e42a40b6b",
   },
   {
     name: "DigitalShelf",
     enName: "Digital Shelf",
     arName: "الرفوف الرقمية",
-    url: digitalShelf,
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FDigital-Shelf-AI.jpg?alt=media&token=5aae3dfe-cee2-4510-a49f-b3d7af09fc9a",
   },
   {
     name: "transparentScreen",
     enName: "Transparent Screens",
     arName: "الشاشات الشفافة",
-    url: transparentScreen,
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2Ftransparent-screen-AI.jpg?alt=media&token=1566b729-d380-4b30-b4d6-28f6b8bdebef",
   },
   {
     name: "ledVideoScreen",
     enName: "LED Video Screen",
     arName: "شاشات الحائط داخلية وخارجيه",
-    url: ledVideoScreen,
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FLED-Screen-AI2.jpg?alt=media&token=d6e6a401-258a-4bbd-b8f8-bf987cbc360e",
   },
   {
     name: "smartTable",
     enName: "Smart Tables",
     arName: "الطاولات الذكية",
-    url: smartTable,
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FsmartTable.jpg?alt=media&token=ee13d2a3-a899-4e8b-a3ca-b9ae82809842",
   },
   {
     name: "inkCatridges",
     enName: "Ink cartridges",
     arName: "خراطيش الحبر",
-    url: inkCatridges,
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FInk%20cartridges1.jpg?alt=media&token=0a2cff23-5921-49ac-a1e8-ecd4a64c8426",
   },
 ];
 
