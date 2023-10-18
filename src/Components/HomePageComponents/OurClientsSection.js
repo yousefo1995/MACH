@@ -1,37 +1,67 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
-import alhakir from "../images/clientImages/client-alhakir.webp";
-import almanaHospital from "../images/clientImages/client-almanaHospitals.png";
-import amco from "../images/clientImages/client-AMCO.png";
-import faisaliah from "../images/clientImages/client-faisaliah.jpg";
-import panda from "../images/clientImages/client-Panda.png";
-import petroMin from "../images/clientImages/client-petroMin.jpg";
-import pureGym from "../images/clientImages/client-pureGym1.png";
-import riyadhPharma from "../images/clientImages/client-RiyadhPharma.png";
-import spl from "../images/clientImages/client-SPL.jpg";
-import sporkys from "../images/clientImages/client-sporkys.png";
-import unitedMotors from "../images/clientImages/client-unitedMotors1.jpg";
-import alMamlakaHospital from "../images/clientImages/client-Al-mamlakHospital.jpeg";
-import padelIn from "../images/clientImages/client-padel-In.png";
-import tamimiMarkets from "../images/clientImages/client-tamimiMarkets.png";
-import ministryOfEnergy from "../images/clientImages/client-ministryOfEnergy.jpg";
 
 const clientsIcons = [
-  { name: "Alhakir", url: alhakir },
-  { name: "Almana Hospital", url: almanaHospital },
-  { name: "AMCO", url: amco },
-  { name: "Faisaliah", url: faisaliah },
-  { name: "Panda", url: panda },
-  { name: "Petro Min", url: petroMin },
-  { name: "Pure Gym", url: pureGym },
-  { name: "Riyadh Pharma", url: riyadhPharma },
-  { name: "SPL", url: spl },
-  { name: "Sporky", url: sporkys },
-  { name: "United Motors", url: unitedMotors },
-  { name: "Al-Mamlaka Hospital", url: alMamlakaHospital },
-  { name: "Padel-In", url: padelIn },
-  { name: "Tamimi Markets", url: tamimiMarkets },
-  { name: "Ministry Of Energy", url: ministryOfEnergy },
+  {
+    name: "Alhakir",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-alhakir.webp?alt=media&token=0d4eada0-20b4-4a51-8d63-6581f08acfe8",
+  },
+  {
+    name: "Almana Hospital",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-almanaHospitals.png?alt=media&token=8de0edaa-0018-42e1-aa10-f7cde14bbc12",
+  },
+  {
+    name: "AMCO",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-AMCO.png?alt=media&token=46b117f7-64ec-4c4e-9530-5ccc82843192",
+  },
+  {
+    name: "Faisaliah",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-faisaliah.jpg?alt=media&token=0c525d4d-d50d-4a3c-92ab-ae22ae211896",
+  },
+  {
+    name: "Panda",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-Panda.png?alt=media&token=302a14dd-6932-4d91-8282-5829bc458f0f",
+  },
+  {
+    name: "Petro Min",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-petroMin.jpg?alt=media&token=a3a4dc3d-8d85-4b7b-a513-4ae69f08f8d1",
+  },
+  {
+    name: "Pure Gym",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-pureGym.png?alt=media&token=68b70e95-f7e3-4ec7-9e1a-9c934537815c",
+  },
+  {
+    name: "Riyadh Pharma",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-RiyadhPharma.png?alt=media&token=7fa4452f-853d-4a20-b43a-817dbeaaf4e8",
+  },
+  {
+    name: "SPL",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-SPL.jpg?alt=media&token=2a234bbe-98e8-468f-8072-b5d702e67c11",
+  },
+  {
+    name: "Sporky",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-sporkys.png?alt=media&token=62fd250f-2d87-4830-90c2-62fbe512317a",
+  },
+  {
+    name: "United Motors",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-unitedMotors.jpg?alt=media&token=c106206d-522a-4028-bc96-2b0e2cbbcf6c",
+  },
+  {
+    name: "Al-Mamlaka Hospital",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-Al-mamlakHospital.jpeg?alt=media&token=809cf1c0-0c36-49d3-8d76-3e6e2725531b",
+  },
+  {
+    name: "Padel-In",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-padel-In.png?alt=media&token=3ebf3ed1-2eb3-45bc-a562-c79ea7b44462",
+  },
+  {
+    name: "Tamimi Markets",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-tamimiMarkets.png?alt=media&token=2323920c-c771-4728-9c90-a4d898572143",
+  },
+  {
+    name: "Ministry Of Energy",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-ministryOfEnergy.jpg?alt=media&token=36d428b5-00f6-42b8-bf5c-503f747ef0cd",
+  },
 ];
 
 const OurClientsSection = () => {
