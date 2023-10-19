@@ -3,64 +3,72 @@ import React from "react";
 
 const clientsIcons = [
   {
-    name: "Alhakir",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-alhakir.webp?alt=media&token=0d4eada0-20b4-4a51-8d63-6581f08acfe8",
+    name: "Ministry Of Energy",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-ministryOfEnergy.jpg?alt=media&token=5358753b-97df-478f-9496-ee10a608747f",
   },
   {
-    name: "Almana Hospital",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-almanaHospitals.png?alt=media&token=8de0edaa-0018-42e1-aa10-f7cde14bbc12",
+    name: "Modon",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fmodon.png?alt=media&token=0f7900d6-3a38-48f7-8214-8dae493a2596",
   },
   {
-    name: "AMCO",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-AMCO.png?alt=media&token=46b117f7-64ec-4c4e-9530-5ccc82843192",
-  },
-  {
-    name: "Faisaliah",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-faisaliah.jpg?alt=media&token=0c525d4d-d50d-4a3c-92ab-ae22ae211896",
+    name: "Nahdi",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fnahdi.png?alt=media&token=6c0b64b3-5230-4468-a6f7-ad30b4719bb8",
   },
   {
     name: "Panda",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-Panda.png?alt=media&token=302a14dd-6932-4d91-8282-5829bc458f0f",
-  },
-  {
-    name: "Petro Min",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-petroMin.jpg?alt=media&token=a3a4dc3d-8d85-4b7b-a513-4ae69f08f8d1",
-  },
-  {
-    name: "Pure Gym",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-pureGym.png?alt=media&token=68b70e95-f7e3-4ec7-9e1a-9c934537815c",
-  },
-  {
-    name: "Riyadh Pharma",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-RiyadhPharma.png?alt=media&token=7fa4452f-853d-4a20-b43a-817dbeaaf4e8",
-  },
-  {
-    name: "SPL",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-SPL.jpg?alt=media&token=2a234bbe-98e8-468f-8072-b5d702e67c11",
-  },
-  {
-    name: "Sporky",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-sporkys.png?alt=media&token=62fd250f-2d87-4830-90c2-62fbe512317a",
-  },
-  {
-    name: "United Motors",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-unitedMotors.jpg?alt=media&token=c106206d-522a-4028-bc96-2b0e2cbbcf6c",
-  },
-  {
-    name: "Al-Mamlaka Hospital",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-Al-mamlakHospital.jpeg?alt=media&token=809cf1c0-0c36-49d3-8d76-3e6e2725531b",
-  },
-  {
-    name: "Padel-In",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-padel-In.png?alt=media&token=3ebf3ed1-2eb3-45bc-a562-c79ea7b44462",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-Panda.png?alt=media&token=5a63e84d-c66f-407f-b5b1-f0c40a568c45",
   },
   {
     name: "Tamimi Markets",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-tamimiMarkets.png?alt=media&token=2323920c-c771-4728-9c90-a4d898572143",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-tamimiMarkets.png?alt=media&token=242de5d7-1dee-4911-a66f-51121e95de3f",
   },
   {
-    name: "Ministry Of Energy",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/OurClients%2Fclient-ministryOfEnergy.jpg?alt=media&token=36d428b5-00f6-42b8-bf5c-503f747ef0cd",
+    name: "Alhakir",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-alhakir.webp?alt=media&token=df540b18-eed1-4fac-a2a7-b40d98874f98",
+  },
+  {
+    name: "Almana Hospital",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-almanaHospitals.png?alt=media&token=27dd8e52-7c3e-43af-b82f-737d96e6d5d3",
+  },
+  {
+    name: "AMCO",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-AMCO.png?alt=media&token=66288321-b95f-4eed-b049-60cdb77fafa1",
+  },
+  {
+    name: "Faisaliah",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-faisaliah.jpg?alt=media&token=8b44c355-dca7-4f3b-bd71-45bfcd9a9846",
+  },
+  {
+    name: "Petro Min",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-petroMin.jpg?alt=media&token=9b7a008f-96e4-4351-a1da-5842dbe61cb2",
+  },
+  {
+    name: "Pure Gym",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-pureGym.png?alt=media&token=9c8a349b-88ab-4de5-a86b-485d87b889ff",
+  },
+  {
+    name: "Riyadh Pharma",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-RiyadhPharma.png?alt=media&token=304e39f1-a345-453b-b085-b58cba6f1240",
+  },
+  {
+    name: "SPL",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-SPL.jpg?alt=media&token=79e6367b-0035-4634-8213-ea2a40c78463",
+  },
+  {
+    name: "Sporky",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-sporkys.png?alt=media&token=35fe4e43-b803-4631-96b1-b6ffa8383f83",
+  },
+  {
+    name: "United Motors",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-unitedMotors.jpg?alt=media&token=fd2f7a7c-900e-49d6-81cf-1a2f64e693a2",
+  },
+  {
+    name: "Al-Mamlaka Hospital",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-Al-mamlakHospital.jpeg?alt=media&token=376aae31-ce14-4c4f-9468-ed800cd3cb07",
+  },
+  {
+    name: "Padel-In",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-padel-In.png?alt=media&token=012cc99d-48ee-42c3-a4cd-fa4c26d2bbc1",
   },
 ];
 
@@ -72,7 +80,7 @@ const OurClientsSection = () => {
         fontSize="36px"
         fontWeight="700"
         mb={3}
-        color="primary.main"
+        color="secondary.main"
       >
         <span style={{ borderBottom: "4px solid" }}>Our Clients</span>
       </Typography>
@@ -81,7 +89,7 @@ const OurClientsSection = () => {
         textAlign="center"
         variant="body1"
         mb={1}
-        color="primary"
+        color="secondary.main"
       >
         MAHC is proud to collaborate with a diverse range of clients from
         various industries. Our commitment to excellence has fostered strong,

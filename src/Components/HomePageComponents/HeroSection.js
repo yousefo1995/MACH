@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Button,
@@ -7,20 +7,19 @@ import {
   Stack,
   Typography,
   Container,
-  Skeleton,
 } from "@mui/material";
-import { getDoc, doc } from "firebase/firestore";
 
-import { db } from "../../Firebase";
+const coverData = {
+  name: "cover image",
+  url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/HeroImage%2FHeroCover.jpg?alt=media&token=2c900119-17fc-4721-b327-74d52635dedb",
+};
 
 //styles
 const heroCardMediaStyles = {
   maxHeight: { xs: "320px", md: "520px" },
   objectFit: "cover",
 };
-const heroCardMediaSkeletonStyles = {
-  height: { xs: "320px", md: "520px" },
-};
+
 const heroTextContainerStyles = {
   display: "flex",
   justifyContent: "center",
@@ -29,43 +28,21 @@ const heroTextContainerStyles = {
 
 const HeroSection = () => {
   const navigate = useNavigate();
-  const [coverData, setCoverData] = useState();
-  const [isLoading, setIsLoading] = useState(false);
-
-  const getData = async () => {
-    try {
-      const docRef = doc(db, "images", "coverImage");
-      const docSnap = await getDoc(docRef);
-      console.log(docSnap.data());
-      setCoverData(docSnap.data());
-      setIsLoading(true);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-  useEffect(() => {
-    getData();
-  }, []);
 
   return (
     <Stack maxWidth="xxl" width="100%">
-      <Stack position="relative">
+      <Stack
+        position="relative"
+        minHeight={{ xs: "194px", sm: "320px", md: "520px" }}
+      >
         <Paper elevation={0}>
-          {!isLoading ? (
-            <Skeleton
-              variant="rectangular"
-              width="100%"
-              sx={heroCardMediaSkeletonStyles}
-            />
-          ) : (
-            <CardMedia
-              component="img"
-              src={coverData?.url}
-              title={coverData?.name}
-              width="100%"
-              sx={heroCardMediaStyles}
-            />
-          )}
+          <CardMedia
+            component="img"
+            src={coverData?.url}
+            title={coverData?.name}
+            width="100%"
+            sx={heroCardMediaStyles}
+          />
           <Stack
             position="absolute"
             width="100%"

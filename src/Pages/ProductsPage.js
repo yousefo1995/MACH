@@ -8,37 +8,37 @@ const productsData = [
     name: "digitalSignage",
     enName: "Digital Signage",
     arName: "اللوحات الرقمية",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FDigitalSignage1.jpg?alt=media&token=62898348-cdf2-4af3-b80a-669e42a40b6b",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2FDigitalSignage1.jpg?alt=media&token=8e827940-89ee-4da6-935e-47b7c8d21494",
   },
   {
     name: "DigitalShelf",
     enName: "Digital Shelf",
     arName: "الرفوف الرقمية",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FDigital-Shelf-AI.jpg?alt=media&token=5aae3dfe-cee2-4510-a49f-b3d7af09fc9a",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2FDigital-Shelf-AI.jpg?alt=media&token=73af6c63-1a41-4d8f-b49d-cae572e6ef40",
   },
   {
     name: "transparentScreen",
     enName: "Transparent Screens",
     arName: "الشاشات الشفافة",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2Ftransparent-screen-AI.jpg?alt=media&token=1566b729-d380-4b30-b4d6-28f6b8bdebef",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2Ftransparent-screen-AI.jpg?alt=media&token=fb3094c5-53c0-4254-b334-494812d52384",
   },
   {
     name: "ledVideoScreen",
     enName: "LED Video Screen",
     arName: "شاشات الحائط داخلية وخارجيه",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FLED-Screen-AI2.jpg?alt=media&token=d6e6a401-258a-4bbd-b8f8-bf987cbc360e",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2FLED-Screen-AI2.jpg?alt=media&token=a815b351-0c1d-4726-80fa-a1777bdb9d96",
   },
   {
     name: "smartTable",
     enName: "Smart Tables",
     arName: "الطاولات الذكية",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FsmartTable.jpg?alt=media&token=ee13d2a3-a899-4e8b-a3ca-b9ae82809842",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2FsmartTable.jpg?alt=media&token=e26facd0-bd23-48e3-829d-bed0dd5ce962",
   },
   {
     name: "inkCatridges",
     enName: "Ink cartridges",
     arName: "خراطيش الحبر",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-f965e.appspot.com/o/Products%2FInk%20cartridges1.jpg?alt=media&token=0a2cff23-5921-49ac-a1e8-ecd4a64c8426",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2FInk%20cartridges1.jpg?alt=media&token=b1e2c61b-ea96-4fc7-ad9a-3124c6e50059",
   },
 ];
 
