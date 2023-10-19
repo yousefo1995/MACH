@@ -5,7 +5,7 @@ import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
 
-import ScreenProduct from "../images/EditedProducts.png";
+import ScreenProduct from "../images/screenProduct.png";
 import OurWork from "../images/OurWorkBg.png";
 import service from "../images/Service.jpg";
 
@@ -13,19 +13,16 @@ const images = [
   {
     url: service,
     title: "Services",
-    width: "30%",
     path: "services",
   },
   {
     url: ScreenProduct,
     title: "Products",
-    width: "30%",
     path: "products",
   },
   {
     url: OurWork,
     title: "Our work",
-    width: "30%",
     path: "ourWork",
   },
 ];
@@ -110,7 +107,7 @@ export default function NavigationSection() {
           focusRipple
           key={image.title}
           style={{
-            width: image.width,
+            width: "30%",
           }}
           onClick={() => navigate(image.path)}
         >
