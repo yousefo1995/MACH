@@ -68,7 +68,7 @@ const clientsIcons = [
   },
   {
     name: "Padel-In",
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fclient-padel-In.png?alt=media&token=012cc99d-48ee-42c3-a4cd-fa4c26d2bbc1",
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurClients%2Fpadel-in.jpg?alt=media&token=16c803a3-c8a5-4bfc-9997-43a2430bec83",
   },
 ];
 
@@ -80,7 +80,7 @@ const OurClientsSection = () => {
         fontSize="36px"
         fontWeight="700"
         mb={3}
-        color="secondary.main"
+        color="primary.main"
       >
         <span style={{ borderBottom: "4px solid" }}>Our Clients</span>
       </Typography>
