@@ -21,15 +21,16 @@ const theme = createTheme({
     secondary: {
       // main: "#FF5C8D",
       // main: "#E17870", // from cover
-      main: "#AD6B71", // from cover  1111
+      // main: "#AD6B71", // from cover  1111 ========================================
       // main: "#327C14", // logo color
-      // main: "#E79E00", //from our values website idea  https://www.renderforest.com/website-maker/preview/lang/template/144/gallery/?backUrl=websites%3Fs%3Dcompany%2Bprofile
+      // main: "#E79E00",
       // main: "#60858D", ///  222222
       // main: "#A47C81", //  44444
       // main: "#708D81",
       // main: "#5D7E92", /// 33333
       // main: "#789C8B",
       // main: "#6E7B8B",
+      main: "#666666",
     },
     action: {
       main: "#F4EEA9",

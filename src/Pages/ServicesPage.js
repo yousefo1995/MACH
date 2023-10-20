@@ -45,12 +45,20 @@ const ServicesPage = () => {
 
   return (
     <Container>
-      <Stack flexDirection="row" justifyContent="space-between" mt={12} mb={12}>
+      <Stack alignItems="center" mt={12} mb={10}>
         <Typography variant="h1" fontWeight="700" color="primary">
-          <span style={{ borderBottom: "5px solid" }}>Services</span>
+          <span style={{ borderBottom: "8px solid", borderRadius: "8px" }}>
+            Services
+          </span>
         </Typography>
-        <Typography variant="h1" fontWeight="700" color="primary">
-          <span style={{ borderBottom: "5px solid" }}>خدماتنا</span>
+        <Typography
+          color="secondary.dark"
+          textAlign="center"
+          mt={4}
+          width="80%"
+        >
+          Empowering Business Success through Customized Solutions: Managed
+          Print Services, IT Helpdesk Support, and Maintenance Contracts.
         </Typography>
       </Stack>
 
