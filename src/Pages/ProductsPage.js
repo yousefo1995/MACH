@@ -64,7 +64,7 @@ const ProductsPage = () => {
             </span>
           </Typography>
           <Typography
-            color="primary.main"
+            color="secondary.dark"
             textAlign="center"
             mt={4}
             width="60%"

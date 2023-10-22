@@ -36,6 +36,7 @@ const MissionAndVisionComponent = ({
               variant="h5"
               fontWeight="700"
               fontStyle="italic"
+              color="primary.main"
             >
               <span style={{ borderBottom: "2px solid" }}>{enTitle}</span>
             </Typography>
@@ -74,6 +75,7 @@ const MissionAndVisionComponent = ({
               fontStyle="italic"
               textAlign="right"
               fontFamily="Rubik, sans-serif"
+              color="primary.main"
             >
               <span style={{ borderBottom: "2px solid" }}>{arTitle}</span>
             </Typography>

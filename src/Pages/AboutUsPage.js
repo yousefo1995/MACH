@@ -33,9 +33,9 @@ const AboutUsPage = () => {
           flexDirection={{ xs: "column-reverse", lg: "row" }}
           justifyContent={{ xs: "space-between", xl: "space-around" }}
           marginY={{ xs: 4, sm: 9 }}
+          color="secondary.dark"
         >
           <Stack
-            color="primary.main"
             width={{ xs: "100%", lg: "45%" }}
             mx={{ xs: 0, lg: 2 }}
             justifyContent="space-evenly"
@@ -46,6 +46,7 @@ const AboutUsPage = () => {
                 variant="h1"
                 mb={2}
                 textAlign={{ xs: "center", lg: "initial" }}
+                color="primary.main"
               >
                 {textData.enTitle}
               </Typography>
@@ -79,6 +80,7 @@ const AboutUsPage = () => {
                 mb={1}
                 alignItems="center"
                 alignSelf={{ xs: "center", lg: "flex-end" }}
+                color="primary.main"
               >
                 <img src={logo} alt="Company logo" width="140px" />
                 <Typography variant="h1" gutterBottom pt={1} ml={0.5}>

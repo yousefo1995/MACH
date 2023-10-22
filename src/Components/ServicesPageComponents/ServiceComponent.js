@@ -17,10 +17,10 @@ const ServiceComponent = ({
       mb={8}
     >
       <Stack width={{ xs: "100%", md: "35%" }} mb={{ xs: 3, md: 0 }}>
-        <Typography variant="h6" fontWeight="700" color="secondary" mb={2}>
+        <Typography variant="h6" fontWeight="700" color="primary.main" mb={2}>
           {enTitle}
         </Typography>
-        <Typography variant="body2" color="secondary">
+        <Typography variant="body2" color="secondary.dark">
           {enParagraph}
         </Typography>
       </Stack>
@@ -36,7 +36,7 @@ const ServiceComponent = ({
         <Typography
           variant="h5"
           fontWeight="700"
-          color="secondary"
+          color="primary.main"
           mb={2}
           align="right"
           fontFamily="Rubik, sans-serif"
@@ -45,7 +45,7 @@ const ServiceComponent = ({
         </Typography>
         <Typography
           variant="body1"
-          color="secondary"
+          color="secondary.dark"
           dir="rtl"
           // fontFamily="Rubik, sans-serif"
         >
