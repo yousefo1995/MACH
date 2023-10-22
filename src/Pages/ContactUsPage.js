@@ -51,11 +51,11 @@ const ContactUsPage = () => {
       </Container>
 
       {/* Location */}
-      {/* <Stack width="100%" alignItems="center">
-        <Stack width="100%" maxWidth="xxl" pt={10} bgcolor="primary.main">
+      <Stack width="100%" alignItems="center">
+        <Stack width="100%" maxWidth="xxl" pt={8} bgcolor="primary.main">
           <iframe
             title="location"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6751.607921498437!2d35.29043152928353!3d32.20951272396578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ce0bf4413a14f%3A0xf265c6f017687cc5!2sJacob&#39;s%20Well%20Greek%20Orthodox%20Church!5e0!3m2!1sar!2s!4v1696445210579!5m2!1sar!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.8924997746058!2d46.658127099999994!3d24.7648747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee2c4fc185999%3A0x6ef67f252fdc0d2f!2sAl-Hokair%20Group%20Building!5e0!3m2!1sen!2ssa!4v1697817853847!5m2!1sen!2ssa"
             width="100%"
             height="264"
             style={{ border: "0", padding: "0" }}
@@ -64,7 +64,7 @@ const ContactUsPage = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </Stack>
-      </Stack> */}
+      </Stack>
     </Stack>
   );
 };
