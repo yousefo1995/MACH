@@ -155,21 +155,29 @@ const Footer = () => {
               justifyContent="center"
               paddingTop={4}
             >
-              <IconButton color="iconFooter">
+              {/* <IconButton color="iconFooter">
                 <FacebookIcon />
               </IconButton>
               <IconButton color="iconFooter">
                 <TwitterIcon />
-              </IconButton>
-              <IconButton color="iconFooter">
+              </IconButton> */}
+              <IconButton
+                color="iconFooter"
+                href="https://www.instagram.com/mahc.tech/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+                target="_blank"
+              >
                 <InstagramIcon />
               </IconButton>
-              <IconButton color="iconFooter">
+              <IconButton
+                color="iconFooter"
+                href="https://www.linkedin.com/company/mishal-abdulmohsin-alhokair-ltd-co-mahc/"
+                target="_blank"
+              >
                 <LinkedInIcon />
               </IconButton>
-              <IconButton color="iconFooter">
+              {/* <IconButton color="iconFooter">
                 <WhatsAppIcon />
-              </IconButton>{" "}
+              </IconButton>{" "} */}
             </Stack>
           </Stack>
           <Stack
