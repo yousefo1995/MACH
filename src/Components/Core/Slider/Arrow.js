@@ -40,7 +40,7 @@ export function Arrow({
       display={ButtonsDisplay}
       sx={{
         position: "absolute",
-        bottom: "30%",
+        bottom: "35%",
         left: { xs: isLeft && "8px", sm: isLeft && "-40px" },
         right: { xs: !isLeft && "8px", sm: !isLeft && "-42px" },
         zIndex: 1,
@@ -54,7 +54,7 @@ export function Arrow({
         bg="rgb(18, 18, 18, 0.45)"
         hoverBg="rgb(18, 18, 18, 0.45)"
         iconColor="#fff"
-        iconHover="#f5c518"
+        iconHover="#327C14"
         iconSize="30px"
       >
         {children}
