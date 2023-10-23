@@ -55,7 +55,7 @@ const SimpleSlider = ({
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -63,7 +63,7 @@ const SimpleSlider = ({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          dots: true,
+          dots: false,
         },
       },
     ],
