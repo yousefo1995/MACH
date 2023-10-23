@@ -13,7 +13,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
             justifyContent: "center",
             // alignItems: "center",
             paddingY: "32px",
-            flexDirection: "column", // Add this to stack content vertically
+            flexDirection: "column",
           }}
         >
           <Grid container>
@@ -29,28 +29,30 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
             >
               <Stack
                 alignItems="center"
-                color="secondary.main"
+                color="secondary.dark"
                 sx={{
                   flexGrow: 1, // Take all available vertical space
+                  justifyContent: "center",
                 }}
               >
                 <Typography
                   variant="h5"
                   fontWeight="700"
+                  fontSize={{ xs: "1.5rem", lg: "2rem" }}
                   fontStyle="italic"
                   mb={1}
                   mt={1}
                 >
                   {enTitle}
                 </Typography>
-                <Typography
+                {/* <Typography
                   variant="h5"
                   fontWeight="700"
                   fontStyle="italic"
                   mb={1}
                 >
                   {arTitle}
-                </Typography>
+                </Typography> */}
               </Stack>
               <Stack
                 pl={{ xs: 2, sm: isLeft ? 2 : 4 }}
@@ -63,8 +65,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
                   sx={{
                     width: "100%",
                     objectFit: "cover",
-                    // height: "calc(100% - 48px)",
-                    flexGrow: "1", // Adjust based on your Typography's margin and padding
+                    flexGrow: "1", // Adjust
                   }}
                   image={img1}
                   title={enTitle}
@@ -83,6 +84,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
                 pl={2}
                 pr={{ xs: 2, sm: isLeft ? 2 : 4 }}
                 pt={2}
+                alignSelf={isLeft && "flex-end"}
                 width="100%"
               >
                 <CardMedia
@@ -91,6 +93,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
                     width: "100%",
                     objectFit: "cover",
                     maxHeight: { md: "340px", lg: "420px" },
+                    minHeight: { lg: "463px" },
                   }}
                   image={img2}
                   title={enTitle}
