@@ -2,7 +2,7 @@ import { Box, Container, Stack, Typography } from "@mui/material";
 import React from "react";
 
 import missionImg from "../../images/mission2.jpg";
-import visionImg from "../../images/vision2.jpg";
+import visionImg from "../../images/visionImage.jpg";
 import MissionAndVisionComponent from "./MissionAndVisionComponent";
 const MissionAndVisionSecData = [
   {
