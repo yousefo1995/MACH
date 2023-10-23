@@ -77,6 +77,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
                     flexGrow: "1", // Adjust
                   }}
                   image={img1}
+                  loading="lazy"
                   title={enTitle}
                 />
               </Stack>
@@ -106,6 +107,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
                   }}
                   image={img2}
                   title={enTitle}
+                  loading="lazy"
                 />
               </Stack>
             </Grid>
