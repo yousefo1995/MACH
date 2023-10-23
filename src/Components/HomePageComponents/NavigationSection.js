@@ -5,7 +5,7 @@ import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
 
-import ScreenProduct from "../images/EditedProducts.png";
+import ScreenProduct from "../images/screenProduct.png";
 import OurWork from "../images/OurWorkBg.png";
 import service from "../images/Service.jpg";
 
@@ -13,19 +13,16 @@ const images = [
   {
     url: service,
     title: "Services",
-    width: "30%",
     path: "services",
   },
   {
     url: ScreenProduct,
     title: "Products",
-    width: "30%",
     path: "products",
   },
   {
     url: OurWork,
     title: "Our work",
-    width: "30%",
     path: "ourWork",
   },
 ];
@@ -94,20 +91,23 @@ const ImageMarked = styled("span")(({ theme }) => ({
   transition: theme.transitions.create("opacity"),
 }));
 
+const navigationBoxStyles = {
+  display: "flex",
+  flexWrap: "wrap",
+  minWidth: 300,
+  width: "100%",
+};
+
 export default function NavigationSection() {
   const navigate = useNavigate();
   return (
-    <Box
-      gap={2.5}
-      justifyContent="center"
-      sx={{ display: "flex", flexWrap: "wrap", minWidth: 300, width: "100%" }}
-    >
+    <Box gap={2.5} justifyContent="center" sx={navigationBoxStyles}>
       {images.map((image) => (
         <ImageButton
           focusRipple
           key={image.title}
           style={{
-            width: image.width,
+            width: "30%",
           }}
           onClick={() => navigate(image.path)}
         >
@@ -116,7 +116,7 @@ export default function NavigationSection() {
           <Image>
             <Typography
               component="span"
-              variant="h6"
+              variant="h2"
               color="inherit"
               sx={{
                 position: "relative",

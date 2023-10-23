@@ -9,7 +9,6 @@ import {
   TextField,
   Stack,
   Typography,
-  Alert,
 } from "@mui/material";
 import InfoOutlined from "@mui/icons-material/InfoOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
@@ -67,10 +66,10 @@ const ContactUsForm = () => {
 
       emailjs
         .sendForm(
-          "service_o7q1v9v",
-          "template_upvs5ho",
+          "service_249pe4u",
+          "template_s4yikyt",
           formRef.current,
-          "8Y-8N1w3dj98OeXZJ"
+          "_l2_uZY7seh_9AtVZ"
         )
         .then(
           (result) => {

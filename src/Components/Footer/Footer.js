@@ -20,7 +20,7 @@ const Footer = () => {
 
   return (
     <Box bgcolor="primary.main">
-      <Container maxWidth="xl">
+      <Container maxWidth="xxl">
         <Stack
           color="#fff"
           flexDirection={{ sx: "column", lg: "row" }}
@@ -49,7 +49,9 @@ const Footer = () => {
             >
               Address: 11584, Riyadh, Kingdom of Saudi Arabia.
             </Typography>
-            <Typography variant="body2">P.O. Box: 57750</Typography>
+            <Typography variant="body2" whiteSpace="nowrap">
+              P.O. Box: 57750
+            </Typography>
             <Typography variant="body2" whiteSpace="nowrap">
               Tel: +4444 413 11 966
             </Typography>
@@ -153,21 +155,29 @@ const Footer = () => {
               justifyContent="center"
               paddingTop={4}
             >
-              <IconButton color="iconFooter">
+              {/* <IconButton color="iconFooter">
                 <FacebookIcon />
               </IconButton>
               <IconButton color="iconFooter">
                 <TwitterIcon />
-              </IconButton>
-              <IconButton color="iconFooter">
+              </IconButton> */}
+              <IconButton
+                color="iconFooter"
+                href="https://www.instagram.com/mahc.tech/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
+                target="_blank"
+              >
                 <InstagramIcon />
               </IconButton>
-              <IconButton color="iconFooter">
+              <IconButton
+                color="iconFooter"
+                href="https://www.linkedin.com/company/mishal-abdulmohsin-alhokair-ltd-co-mahc/"
+                target="_blank"
+              >
                 <LinkedInIcon />
               </IconButton>
-              <IconButton color="iconFooter">
+              {/* <IconButton color="iconFooter">
                 <WhatsAppIcon />
-              </IconButton>{" "}
+              </IconButton>{" "} */}
             </Stack>
           </Stack>
           <Stack

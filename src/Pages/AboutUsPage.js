@@ -11,9 +11,14 @@ const textData = {
     " With a team that has valuable experience deploying innovative ideas and intelligent strategies, we enable our clients to accelerate their business growth with excellent convenience and impressive tech solutions.",
   arTitle: "عن",
   arParagraph1:
-    "ﺷــــــﺮﻛﺔ ﻣﺸﻌﻞ ﻋﺒـــﺪ اﻟﻤﺤﺴــــﻦ اﻟﺤــــﻜﻴﺮ اﻟﻤـــﺤﺪودة ، ﻫـــﻲ ﺷــــﺮﻛﺔ ﻧﺸﻄــــﺔ ﻓــــﻲ اﻟﺘﺠﺎرة وﺧـــــﺪﻣﺎت ﺗﻜﻨـــــــﻮﻟﻮﺟـــﻴﺎ اﻟﻤﻌـــــﻠﻮﻣﺎت ﻣﻨﺬ ﻋﺎم2018، ﻣﺘﻌـــﺎوﻧﺔ ﻣﻊ ﺷــﺮﻛﺎء ﻣﻬــﻤﻴﻦ ﻓـــﻲ ﺟـــﻤﻴﻊ أﻧﺤـــﺎء اﻟﻤﻤـــﻠﻜﺔ. ",
+    "ﺷــــــﺮﻛﺔ ﻣﺸﻌﻞ ﻋﺒـــﺪ اﻟﻤﺤﺴــــﻦ اﻟﺤــــﻜﻴﺮ اﻟﻤـــﺤﺪودة ، ﻫـــﻲ ﺷــــﺮﻛﺔ ﻧﺸﻄــــﺔ ﻓــــﻲ اﻟﺘﺠﺎرة وﺧـــــﺪﻣﺎت ﺗﻜﻨـــــــﻮﻟﻮﺟـــﻴﺎ اﻟﻤﻌـــــﻠﻮﻣﺎت ﻣﻨﺬ ﻋﺎم 2018، ﻣﺘﻌـــﺎوﻧﺔ ﻣﻊ ﺷــﺮﻛﺎء ﻣﻬــﻤﻴﻦ ﻓـــﻲ ﺟـــﻤﻴﻊ أﻧﺤـــﺎء اﻟﻤﻤـــﻠﻜﺔ. ",
   arParagraph2:
     "ﻣﻦ ﺧﻼل ﻓﺮﻳﻖ ﻳﺘﻤﺘﻊ ﺑﺨﺒﺮة راﺳﺨﺔ ﻓﻲ ﺗﻨﻔﻴﺬ اﻷﻓﻜﺎر اﻟﻤﺒﺘﻜﺮة وﺻﻨﺎﻋﺔ اﻻﺳﺘﺮاﺗﻴﺠﻴﺎت، ﻧﺴﺘﻄﻴﻊ ﺗﻤﻜﻴﻦ ﻋﻤﻼﺋﻨﺎ ﻣﻦ ﺗﺴﺮﻳﻊ ﻧﻤﻮ أﻋﻤﺎﻟﻬﻢ ﺑﺄﻋﻠﻰ ﻣﺴﺘﻮى ﻣﻦ اﻟﺮاﺣﺔ وﻋﻦ ﻃﺮﻳﻖ ﺣﻠﻮل ﺗﻘﻨﻴﺔ ذﻛﻴﺔ.",
+};
+
+const containerStyles = {
+  background:
+    "linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(238,238,238,1) 53%, rgba(251,251,251,0.8907578412224265) 90%)",
 };
 
 const AboutUsPage = () => {
@@ -23,22 +28,16 @@ const AboutUsPage = () => {
 
   return (
     <Stack>
-      <Container
-        maxWidth="xl"
-        sx={{
-          background:
-            "linear-gradient(90deg, rgba(204,204,204,1) 0%, rgba(238,238,238,1) 53%, rgba(251,251,251,0.8907578412224265) 90%)",
-        }}
-      >
+      <Container maxWidth="xxl" sx={containerStyles}>
         <Stack
           flexDirection={{ xs: "column-reverse", lg: "row" }}
-          justifyContent="space-between"
+          justifyContent={{ xs: "space-between", xl: "space-around" }}
           marginY={{ xs: 4, sm: 9 }}
+          color="secondary.dark"
         >
           <Stack
-            color="primary.main"
             width={{ xs: "100%", lg: "45%" }}
-            mx={2}
+            mx={{ xs: 0, lg: 2 }}
             justifyContent="space-evenly"
             alignItems={{ xs: "center", lg: "initial" }}
           >
@@ -47,6 +46,7 @@ const AboutUsPage = () => {
                 variant="h1"
                 mb={2}
                 textAlign={{ xs: "center", lg: "initial" }}
+                color="primary.main"
               >
                 {textData.enTitle}
               </Typography>
@@ -63,15 +63,26 @@ const AboutUsPage = () => {
                 {textData.enParagraph2}
               </Typography>
             </Stack>
-            <Stack width={{ xs: "80%", lg: "100%" }}>
+            <Stack
+              width={{ xs: "100%", lg: "30%" }}
+              alignItems={{ xs: "center", lg: "flex-end" }}
+              mt={10}
+              mr={1} // try on mobile
+              mb={{ xs: 6, lg: 0 }}
+              display={{ xs: "block", lg: "none" }}
+            >
+              <OurValues />
+            </Stack>
+            <Stack width={{ xs: "80%", lg: "100%" }} mb={{ xs: 6, lg: 0 }}>
               <Stack
                 flexDirection="row"
                 mt={4}
                 mb={1}
                 alignItems="center"
                 alignSelf={{ xs: "center", lg: "flex-end" }}
+                color="primary.main"
               >
-                <img src={logo} alt="Company logo" style={{ width: "140px" }} />
+                <img src={logo} alt="Company logo" width="140px" />
                 <Typography variant="h1" gutterBottom pt={1} ml={0.5}>
                   {textData.arTitle}
                 </Typography>
@@ -93,11 +104,12 @@ const AboutUsPage = () => {
             </Stack>
           </Stack>
           <Stack
-            width={{ xs: "100%", lg: "50%" }}
+            width={{ xs: "100%", lg: "30%" }}
             alignItems={{ xs: "center", lg: "flex-end" }}
             mt={4}
             mr={5}
             mb={{ xs: 8, lg: 0 }}
+            display={{ xs: "none", lg: "flex" }}
           >
             <OurValues />
           </Stack>
