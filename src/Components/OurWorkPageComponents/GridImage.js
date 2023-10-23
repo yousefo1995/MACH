@@ -1,5 +1,5 @@
 import { Card, CardMedia, Grid, Stack, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
 
 const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
   return (
@@ -14,6 +14,15 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
             // alignItems: "center",
             paddingY: "32px",
             flexDirection: "column",
+            //instead of skeleton use minWidth 90%
+            minWidth: {
+              xs: "220px",
+              sm: "500px",
+              md: "650px",
+              lg: "920px",
+              xl: "1150px",
+            },
+            minHeight: "250px",
           }}
         >
           <Grid container>
