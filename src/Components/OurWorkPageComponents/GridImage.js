@@ -51,6 +51,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
                   fontStyle="italic"
                   mb={1}
                   mt={1}
+                  textAlign="center"
                 >
                   {enTitle}
                 </Typography>
@@ -65,7 +66,7 @@ const GridImage = ({ arTitle, enTitle, img1, img2, isLeft }) => {
               </Stack>
               <Stack
                 pl={{ xs: 2, sm: isLeft ? 2 : 4 }}
-                pr={isLeft ? 4 : 2}
+                pr={isLeft ? { xs: 2, sm: 4 } : 2}
                 pt={1}
                 flexGrow={1}
               >
