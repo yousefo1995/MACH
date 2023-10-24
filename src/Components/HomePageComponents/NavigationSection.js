@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 import ScreenProduct from "../images/screenProduct.png";
 import OurWork from "../images/OurWorkBg.png";
-import service from "../images/Service.jpg";
+import service from "../images/ServiceBg.jpg";
 
 const images = [
   {
