@@ -66,10 +66,10 @@ const ContactUsForm = () => {
 
       emailjs
         .sendForm(
-          "service_249pe4u",
-          "template_s4yikyt",
+          "service_38pmq2g",
+          "template_g32j53f",
           formRef.current,
-          "_l2_uZY7seh_9AtVZ"
+          "DpEk87m-waOy9emd0"
         )
         .then(
           (result) => {
