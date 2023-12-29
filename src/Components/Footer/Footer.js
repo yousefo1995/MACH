@@ -67,14 +67,24 @@ const Footer = () => {
             </Typography>
           </Stack>
           <Stack alignItems="center" width="35%">
-            <Typography variant="h6" fontWeight="600" paddingBottom={2}>
-              Menu
+            <Typography
+              variant="h6"
+              fontWeight="600"
+              marginBottom={2}
+              textAlign="center"
+              fontSize="18px"
+              borderBottom="1px solid"
+              borderColor="secondary.main"
+            >
+              {/* site map / Links / Explore / Our Pages / quick links */}
+              Quick links
             </Typography>
             <Stack
               flexDirection={{ xs: "column", lg: "row" }}
               width="80%"
               justifyContent="space-around"
               gap={{ xs: 1, lg: 0 }}
+              // mt={{ xs: 0, lg: 6 }}
             >
               <Stack alignItems="center" gap={1}>
                 <Link
@@ -110,7 +120,7 @@ const Footer = () => {
                     navigate("/services");
                   }}
                 >
-                  services
+                  Services
                 </Link>
               </Stack>
               <Stack alignItems="center" gap={1}>
@@ -123,7 +133,7 @@ const Footer = () => {
                     navigate("/products");
                   }}
                 >
-                  products
+                  Products
                 </Link>{" "}
                 <Link
                   component="button"
@@ -134,7 +144,7 @@ const Footer = () => {
                     navigate("/contactUs");
                   }}
                 >
-                  contact us
+                  Contact us
                 </Link>{" "}
                 <Link
                   component="button"
@@ -145,7 +155,7 @@ const Footer = () => {
                     navigate("/ourWork");
                   }}
                 >
-                  our work
+                  Our work
                 </Link>
               </Stack>
             </Stack>

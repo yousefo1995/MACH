@@ -85,7 +85,12 @@ const MenuDrawer = ({ isOpen, toggleDrawer, setIsDrawerOpen }) => {
           <Divider sx={{ bgcolor: "#424242" }} />
         </Stack>
         <Stack width="100%" alignItems="center">
-          <img src={whiteLogo} alt="Logo" style={{ width: "140px" }} />
+          <img
+            src={whiteLogo}
+            alt="Logo"
+            style={{ width: "140px", cursor: "pointer" }}
+            onClick={() => onClickHandler("/")}
+          />
         </Stack>
       </List>
     </Drawer>
