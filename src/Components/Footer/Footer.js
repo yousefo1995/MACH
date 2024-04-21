@@ -18,6 +18,15 @@ import colorLogo from "../../ColorLogo.svg";
 const Footer = () => {
   const navigate = useNavigate();
 
+  const handleNavigate = (path) => {
+    if (window.location.pathname === path) {
+      // window.location.reload();
+      window.scrollTo(0, 0);
+    } else {
+      navigate(path);
+    }
+  };
+
   return (
     <Box bgcolor="primary.main">
       <Container maxWidth="xxl">
@@ -93,7 +102,7 @@ const Footer = () => {
                   color="#fff"
                   underline="hover"
                   onClick={() => {
-                    navigate("/");
+                    handleNavigate("/");
                   }}
                 >
                   Home
@@ -105,7 +114,7 @@ const Footer = () => {
                   underline="hover"
                   order={{ xs: 3, lg: 2 }}
                   onClick={() => {
-                    navigate("/aboutus");
+                    handleNavigate("/aboutus");
                   }}
                 >
                   About us
@@ -117,7 +126,7 @@ const Footer = () => {
                   underline="hover"
                   order={{ xs: 2, lg: 3 }}
                   onClick={() => {
-                    navigate("/services");
+                    handleNavigate("/services");
                   }}
                 >
                   Services
@@ -130,7 +139,7 @@ const Footer = () => {
                   color="#fff"
                   underline="hover"
                   onClick={() => {
-                    navigate("/products");
+                    handleNavigate("/products");
                   }}
                 >
                   Products
@@ -141,7 +150,7 @@ const Footer = () => {
                   color="#fff"
                   underline="hover"
                   onClick={() => {
-                    navigate("/contactUs");
+                    handleNavigate("/contactUs");
                   }}
                 >
                   Contact us
@@ -152,7 +161,7 @@ const Footer = () => {
                   color="#fff"
                   underline="hover"
                   onClick={() => {
-                    navigate("/ourWork");
+                    handleNavigate("/ourWork");
                   }}
                 >
                   Our work
@@ -197,7 +206,7 @@ const Footer = () => {
             paddingTop={4}
             paddingBottom={{ xs: 2, lg: 0 }}
           >
-            <Stack paddingBottom={1} onClick={() => navigate("/")}>
+            <Stack paddingBottom={1} onClick={() => handleNavigate("/")}>
               <img
                 src={colorLogo}
                 alt="Logo"
