@@ -7,16 +7,6 @@ import maintenanceIcon from "../Components/images/ServiceImages/maintenanceIcon.
 
 const servicesData = [
   {
-    img: printIcon,
-    imgName: "printIcon",
-    enTitle: "Manage Print Services (MPS)",
-    enParagraph:
-      "The program enables our clients to outsource the management of their office printing and imaging devices. The goal of our MPS program is to drive down costs and maximize efficiency within our clients’ organizations.",
-    arTitle: "(MPS) إدارة خدمات الطباعة",
-    arParagraph:
-      "يتيح البرنامج لعملائنا الاستعانة بمصادر خارجية لإدارة أجهزة الطباعة  والتصوير المكتبية الخاصة بهم.الهدف من برنامج  (MPS) الخاص بنا هو خفض التكاليف وزيادة الكفاءة داخل مؤسسات عملائنا.",
-  },
-  {
     img: supportIcon,
     imgName: "supportIcon",
     enTitle: "IT Helpdesk Support",
@@ -35,6 +25,16 @@ const servicesData = [
     arTitle: "عقود الصيانة السنوية",
     arParagraph:
       "بعد التزويد بحلولنا، نقوم بإبرام عقود سنوية مع عملائنا لمواصلة الاهتمام وصيانة أعمالهم.",
+  },
+  {
+    img: printIcon,
+    imgName: "printIcon",
+    enTitle: "Manage Print Services (MPS)",
+    enParagraph:
+      "The program enables our clients to outsource the management of their office printing and imaging devices. The goal of our MPS program is to drive down costs and maximize efficiency within our clients’ organizations.",
+    arTitle: "(MPS) إدارة خدمات الطباعة",
+    arParagraph:
+      "يتيح البرنامج لعملائنا الاستعانة بمصادر خارجية لإدارة أجهزة الطباعة  والتصوير المكتبية الخاصة بهم.الهدف من برنامج  (MPS) الخاص بنا هو خفض التكاليف وزيادة الكفاءة داخل مؤسسات عملائنا.",
   },
 ];
 

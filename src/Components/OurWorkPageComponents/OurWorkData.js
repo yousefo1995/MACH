@@ -19,6 +19,12 @@ export const gridImage = [
     enTitle: "SPARKYS",
     isLeft: false,
   },
+  {
+    img1: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FGrid%2FNahdi%20img1.png?alt=media&token=e9c454a0-a2b2-4a73-97be-ce7beb605f72",
+    img2: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FGrid%2FNahdi%20img2.jpg?alt=media&token=145658ab-afd2-4692-838f-c6b7a2692088",
+    enTitle: "Nahdi Pharmacy",
+    isLeft: true,
+  },
 ];
 export const images = [
   {
@@ -80,5 +86,13 @@ export const images = [
   {
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2015.png?alt=media&token=3461ee80-9753-4772-8663-932c3b1101f1",
     title: "ourWork15",
+  },
+  {
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2FNahdi%20s1.jpg?alt=media&token=83e38bbb-2641-4af7-b5c2-777ed9330062",
+    title: "Nahdi 1",
+  },
+  {
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2FNahdi%20s3.jpg?alt=media&token=199d4a74-0983-4268-9c68-58d8b683385b",
+    title: "Nahdi 3",
   },
 ];
