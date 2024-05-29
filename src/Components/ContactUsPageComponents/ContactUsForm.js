@@ -195,7 +195,7 @@ const ContactUsForm = () => {
             SEND MESSAGE
           </Button>
         </Stack>
-        {true && (
+        {isSent && (
           <FormHelperText>
             <Stack flexDirection="row" alignItems="center" color="success.main">
               <CheckCircleOutlineIcon />
