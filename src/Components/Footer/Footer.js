@@ -13,7 +13,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useNavigate } from "react-router-dom";
-import colorLogo from "../../ColorLogo.svg";
+import whiteLogo from "../../White logo - no background.svg";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -177,9 +177,7 @@ const Footer = () => {
               {/* <IconButton color="iconFooter">
                 <FacebookIcon />
               </IconButton>
-              <IconButton color="iconFooter">
-                <TwitterIcon />
-              </IconButton> */}
+              */}
               <IconButton
                 color="iconFooter"
                 href="https://www.instagram.com/mahc.tech/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"
@@ -193,6 +191,13 @@ const Footer = () => {
                 target="_blank"
               >
                 <LinkedInIcon />
+              </IconButton>
+              <IconButton
+                color="iconFooter"
+                href="https://x.com/Mahc_tech?t=aCPN_zwrscD2Iz4JDW40Kw&s=09"
+                target="_blank"
+              >
+                <TwitterIcon />
               </IconButton>
               {/* <IconButton color="iconFooter">
                 <WhatsAppIcon />
@@ -208,7 +213,7 @@ const Footer = () => {
           >
             <Stack paddingBottom={1} onClick={() => handleNavigate("/")}>
               <img
-                src={colorLogo}
+                src={whiteLogo}
                 alt="Logo"
                 style={{ cursor: "pointer", width: "140px" }}
               />
