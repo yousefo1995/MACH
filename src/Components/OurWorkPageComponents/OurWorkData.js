@@ -19,6 +19,12 @@ export const gridImage = [
     enTitle: "SPARKYS",
     isLeft: false,
   },
+  {
+    img1: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FGrid%2FNahdi%20img1.png?alt=media&token=e9c454a0-a2b2-4a73-97be-ce7beb605f72",
+    img2: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FGrid%2FNahdi%20img2.jpg?alt=media&token=145658ab-afd2-4692-838f-c6b7a2692088",
+    enTitle: "Nahdi Pharmacy",
+    isLeft: true,
+  },
 ];
 export const images = [
   {
@@ -33,10 +39,10 @@ export const images = [
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%203.jpg?alt=media&token=d9d472af-b22a-4764-93bb-68b3178cdc66",
     title: "ourWork3",
   },
-  {
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%204.jpg?alt=media&token=284543af-cbf4-42ce-83b0-9e22d9f7aa6a",
-    title: "ourWork4",
-  },
+  // {
+  //   url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%204.jpg?alt=media&token=284543af-cbf4-42ce-83b0-9e22d9f7aa6a",
+  //   title: "ourWork4",
+  // },
   {
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%205.jpg?alt=media&token=de5d19f0-4e82-4692-96a7-c14e0edb3951",
     title: "ourWork5",
@@ -57,10 +63,10 @@ export const images = [
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%209.jpeg?alt=media&token=8673dfa1-6fa2-402b-b9c8-b7b3723b08d0",
     title: "ourWork9",
   },
-  {
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2010.jpeg?alt=media&token=d8f22a3a-0a6f-460c-923c-ad5de57537ed",
-    title: "ourWork10",
-  },
+  // {
+  //   url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2010.jpeg?alt=media&token=d8f22a3a-0a6f-460c-923c-ad5de57537ed",
+  //   title: "ourWork10",
+  // },
   {
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2011.jpg?alt=media&token=0840db5b-bc3e-40b0-813e-f242af75f676",
     title: "ourWork11",
@@ -80,5 +86,13 @@ export const images = [
   {
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2015.png?alt=media&token=3461ee80-9753-4772-8663-932c3b1101f1",
     title: "ourWork15",
+  },
+  {
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2FNahdi%20s1.jpg?alt=media&token=83e38bbb-2641-4af7-b5c2-777ed9330062",
+    title: "Nahdi 1",
+  },
+  {
+    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2FNahdi%20s3.jpg?alt=media&token=199d4a74-0983-4268-9c68-58d8b683385b",
+    title: "Nahdi 3",
   },
 ];

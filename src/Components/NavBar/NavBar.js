@@ -12,6 +12,16 @@ import logoCropped from "../images/LogoCropped.png";
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    if (window.location.pathname === path) {
+      window.location.reload();
+      window.scrollTo(0, 0);
+    } else {
+      navigate(path);
+    }
+  };
+
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
@@ -22,7 +32,7 @@ const NavBar = () => {
         {/* check the maxWidth  xl or xxl  ====================================================== */}
         <Container maxWidth="xxl">
           <Toolbar>
-            <Stack width="36%" onClick={() => navigate("/")}>
+            <Stack width="36%" onClick={() => handleNavigate("/")}>
               <img
                 src={logoCropped}
                 alt="Logo"
@@ -36,22 +46,37 @@ const NavBar = () => {
               justifyContent="flex-end"
               gap={1}
             >
-              <Button onClick={() => navigate("/")} color="inherit">
+              <Button onClick={() => handleNavigate("/")} color="inherit">
                 Home
               </Button>
-              <Button onClick={() => navigate("/aboutus")} color="inherit">
+              <Button
+                onClick={() => handleNavigate("/aboutus")}
+                color="inherit"
+              >
                 About us
               </Button>
-              <Button onClick={() => navigate("/services")} color="inherit">
+              <Button
+                onClick={() => handleNavigate("/services")}
+                color="inherit"
+              >
                 Services
               </Button>
-              <Button onClick={() => navigate("/products")} color="inherit">
+              <Button
+                onClick={() => handleNavigate("/products")}
+                color="inherit"
+              >
                 Products
               </Button>
-              <Button onClick={() => navigate("/ourWork")} color="inherit">
+              <Button
+                onClick={() => handleNavigate("/ourWork")}
+                color="inherit"
+              >
                 Our work
               </Button>
-              <Button onClick={() => navigate("/contactUs")} color="inherit">
+              <Button
+                onClick={() => handleNavigate("/contactUs")}
+                color="inherit"
+              >
                 Contact us
               </Button>
             </Stack>

@@ -34,12 +34,14 @@ const productsData = [
     arName: "الطاولات الذكية",
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2FsmartTable.jpg?alt=media&token=e26facd0-bd23-48e3-829d-bed0dd5ce962",
   },
+  /*
   {
     name: "inkCatridges",
     enName: "Ink cartridges",
     arName: "خراطيش الحبر",
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/Products%2FInk%20cartridges1.jpg?alt=media&token=b1e2c61b-ea96-4fc7-ad9a-3124c6e50059",
   },
+  */
 ];
 
 const ProductsPage = () => {
