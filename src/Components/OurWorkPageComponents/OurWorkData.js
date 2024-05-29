@@ -39,10 +39,10 @@ export const images = [
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%203.jpg?alt=media&token=d9d472af-b22a-4764-93bb-68b3178cdc66",
     title: "ourWork3",
   },
-  {
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%204.jpg?alt=media&token=284543af-cbf4-42ce-83b0-9e22d9f7aa6a",
-    title: "ourWork4",
-  },
+  // {
+  //   url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%204.jpg?alt=media&token=284543af-cbf4-42ce-83b0-9e22d9f7aa6a",
+  //   title: "ourWork4",
+  // },
   {
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%205.jpg?alt=media&token=de5d19f0-4e82-4692-96a7-c14e0edb3951",
     title: "ourWork5",
@@ -63,10 +63,10 @@ export const images = [
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%209.jpeg?alt=media&token=8673dfa1-6fa2-402b-b9c8-b7b3723b08d0",
     title: "ourWork9",
   },
-  {
-    url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2010.jpeg?alt=media&token=d8f22a3a-0a6f-460c-923c-ad5de57537ed",
-    title: "ourWork10",
-  },
+  // {
+  //   url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2010.jpeg?alt=media&token=d8f22a3a-0a6f-460c-923c-ad5de57537ed",
+  //   title: "ourWork10",
+  // },
   {
     url: "https://firebasestorage.googleapis.com/v0/b/mahc-7c309.appspot.com/o/OurWork%2FSlider%2Fslider%2011.jpg?alt=media&token=0840db5b-bc3e-40b0-813e-f242af75f676",
     title: "ourWork11",
