@@ -15,7 +15,8 @@ const theme = createTheme({
   palette: {
     primary: {
       // main: "#524A4E",
-      main: "#0F202A", //from our values website idea  https://www.renderforest.com/website-maker/preview/lang/template/144/gallery/?backUrl=websites%3Fs%3Dcompany%2Bprofile
+      main: "#327C14",
+      // main: "#0F202A", //from our values website idea  https://www.renderforest.com/website-maker/preview/lang/template/144/gallery/?backUrl=websites%3Fs%3Dcompany%2Bprofile
       // main: "#2D445C",
     },
     secondary: {

@@ -24,7 +24,7 @@ const MissionAndVisionComponent = ({
           paddingTop={{ xs: 2, lg: 0, xl: 5 }}
           minHeight={!isImageToLeft ? "330px" : "250px"}
           justifyContent={!isImageToLeft ? "space-evenly" : "space-between"}
-          color="secondary.main"
+          color="primary.main"
         >
           <Stack
             alignSelf="flex-start"

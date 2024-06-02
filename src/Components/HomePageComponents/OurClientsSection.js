@@ -89,7 +89,7 @@ const OurClientsSection = () => {
         textAlign="center"
         variant="body1"
         mb={1}
-        color="secondary.main"
+        color="primary.main"
       >
         MAHC is proud to collaborate with a diverse range of clients from
         various industries. Our commitment to excellence has fostered strong,

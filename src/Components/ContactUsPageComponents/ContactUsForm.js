@@ -9,6 +9,7 @@ import {
   TextField,
   Stack,
   Typography,
+  Link,
 } from "@mui/material";
 import InfoOutlined from "@mui/icons-material/InfoOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
@@ -97,19 +98,21 @@ const ContactUsForm = () => {
         mb={1}
         variant="h1"
         color="secondary.main"
-        textAlign={{ xs: "center", ml: "initial" }}
+        textAlign={{ xs: "center", ml: "center" }}
       >
         GET IN TOUCH
       </Typography>
       <Typography
         variant="body1"
         fontWeight="normal"
-        mb={0.5}
-        textAlign={{ xs: "center", ml: "initial" }}
+        textAlign={{ xs: "center", ml: "center" }}
       >
         We'd love to hear from you! Please feel free to get in touch with us
-        using the contact form below.
+        using the contact form below or via email at :
       </Typography>
+      <Link mb={0.5} textAlign={{ xs: "center", ml: "center" }}>
+        info@mahc-tech.com
+      </Link>
 
       <form ref={formRef} onSubmit={sendEmail}>
         <FormControl sx={{ width: "100%" }}>
@@ -181,7 +184,7 @@ const ContactUsForm = () => {
             value={formData.message}
           />
         </Stack>
-        <Stack width={{ xs: "100%", ml: "50%" }} my={1.5}>
+        <Stack width={{ xs: "100%", ml: "100%" }} my={1.5}>
           <Button
             variant="contained"
             size="large"

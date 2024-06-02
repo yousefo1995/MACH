@@ -25,7 +25,7 @@ const ContactUsPage = () => {
           pb={10}
           alignItems="center"
         >
-          <Stack display={{ xs: "none", ml: "flex" }} width="55%">
+          {/* <Stack display={{ xs: "none", ml: "flex" }} width="55%">
             <img
               src={contactUsCover}
               alt=""
@@ -38,12 +38,12 @@ const ContactUsPage = () => {
               alt=""
               style={{ maxHeight: "320px", objectFit: "cover" }}
             />
-          </Stack>
+          </Stack> */}
           <Stack
             px={3.8}
             py={3}
             mt={{ xs: 3, ml: 0 }}
-            width={{ xs: "74%", ml: "45%" }}
+            width={{ xs: "74%", ml: "100%" }}
           >
             <ContactUsForm />
           </Stack>

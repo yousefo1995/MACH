@@ -7,7 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { Stack, Box, Container } from "@mui/material";
 import MenuDrawer from "./MenuDrawer";
 import { useNavigate } from "react-router-dom";
-import logoCropped from "../images/LogoCropped.png";
+import whiteLogo from "../../White logo - no background.svg";
 
 const NavBar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -34,7 +34,7 @@ const NavBar = () => {
           <Toolbar>
             <Stack width="36%" onClick={() => handleNavigate("/")}>
               <img
-                src={logoCropped}
+                src={whiteLogo}
                 alt="Logo"
                 style={{ cursor: "pointer", width: "120px" }}
               />
