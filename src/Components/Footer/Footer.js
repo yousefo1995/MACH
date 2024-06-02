@@ -10,7 +10,7 @@ import {
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import XIcon from "@mui/icons-material/X";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { useNavigate } from "react-router-dom";
 import whiteLogo from "../../White logo - no background.svg";
@@ -197,7 +197,7 @@ const Footer = () => {
                 href="https://x.com/Mahc_tech?t=aCPN_zwrscD2Iz4JDW40Kw&s=09"
                 target="_blank"
               >
-                <TwitterIcon />
+                <XIcon />
               </IconButton>
               {/* <IconButton color="iconFooter">
                 <WhatsAppIcon />
